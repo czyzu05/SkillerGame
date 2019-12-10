@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SkillerGame.Model.Controls
+namespace SkillerGame.View.Controls
 {
     /// <summary>
     /// Logika interakcji dla klasy CompositionOnFirstLevelControl.xaml

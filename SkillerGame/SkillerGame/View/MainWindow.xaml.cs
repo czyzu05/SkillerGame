@@ -24,5 +24,13 @@ namespace SkillerGame
         {
             InitializeComponent();
         }
+
+        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //zmiana Z MainWindow na MenuPage
+            MenuPage menuPage = new MenuPage();
+            this.Content = menuPage;
+        }
     }
 }

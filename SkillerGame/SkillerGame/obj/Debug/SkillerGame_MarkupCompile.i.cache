@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Dawid\source\repos\SkillerGame\SkillerGame\obj\Debug\
+C:\Users\Dawid\Desktop\SkillerGame\SkillerGame\SkillerGame\obj\Debug\
 SkillerGame
 none
 false
 DEBUG;TRACE
-C:\Users\Dawid\source\repos\SkillerGame\SkillerGame\App.xaml
-6843118463
+C:\Users\Dawid\Desktop\SkillerGame\SkillerGame\SkillerGame\App.xaml
+6-335062558
 
-11-1181826817
+12-1959335088
 13-1505183044
-Model\Controls\CompositionOnFirstLevelControl.xaml;Model\Controls\MenuControl.xaml;Model\Controls\MenuRedirectionPopUpControl.xaml;View\FirstLevel.xaml;View\MainWindow.xaml;View\MenuPage.xaml;
+View\Controls\CompositionOnFirstLevelControl.xaml;View\Controls\MenuControl.xaml;View\Controls\MenuRedirectionPopUpControl.xaml;View\FirstLevel.xaml;View\MainWindow.xaml;View\MenuPage.xaml;
 
-False
+True
 

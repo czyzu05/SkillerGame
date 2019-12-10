@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SkillerGame.View
+namespace SkillerGame
 {
     /// <summary>
     /// Logika interakcji dla klasy MenuPage.xaml

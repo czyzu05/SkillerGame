@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SkillerGame
+namespace SkillerGame.View.Controls
 {
     /// <summary>
-    /// Logika interakcji dla klasy FirstLevel.xaml
+    /// Logika interakcji dla klasy MenuRedirectionPopUpControl.xaml
     /// </summary>
-    public partial class FirstLevel : Page
+    public partial class MenuRedirectionPopUpControl : Page
     {
-        public FirstLevel()
+        public MenuRedirectionPopUpControl()
         {
             InitializeComponent();
         }

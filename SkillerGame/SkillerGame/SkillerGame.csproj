@@ -55,14 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Model\Controls\CompositionOnFirstLevelControl.xaml.cs">
+    <Compile Include="Model\LevelType.cs" />
+    <Compile Include="View\Controls\CompositionOnFirstLevelControl.xaml.cs">
       <DependentUpon>CompositionOnFirstLevelControl.xaml</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Model\Controls\MenuControl.xaml.cs">
+    <Compile Include="View\Controls\MenuControl.xaml.cs">
       <DependentUpon>MenuControl.xaml</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Model\Controls\MenuRedirectionPopUpControl.xaml.cs">
+    <Compile Include="View\Controls\MenuRedirectionPopUpControl.xaml.cs">
       <DependentUpon>MenuRedirectionPopUpControl.xaml</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="View\FirstLevel.xaml.cs">
       <DependentUpon>FirstLevel.xaml</DependentUpon>
@@ -70,17 +74,20 @@
     <Compile Include="View\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
-    <Page Include="Model\Controls\CompositionOnFirstLevelControl.xaml">
+    <Page Include="View\Controls\CompositionOnFirstLevelControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Page>
-    <Page Include="Model\Controls\MenuControl.xaml">
+    <Page Include="View\Controls\MenuControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Page>
-    <Page Include="Model\Controls\MenuRedirectionPopUpControl.xaml">
+    <Page Include="View\Controls\MenuRedirectionPopUpControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Page>
     <Page Include="View\FirstLevel.xaml">
       <SubType>Designer</SubType>
@@ -131,6 +138,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModel\Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Images\error.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
