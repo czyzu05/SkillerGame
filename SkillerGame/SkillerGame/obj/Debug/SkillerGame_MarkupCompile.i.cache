@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Dawid\Desktop\SkillerGame\SkillerGame\SkillerGame\App.xaml
-6-335062558
+7942200930
 
-12-1959335088
+18-1001100184
 13-1505183044
-View\Controls\CompositionOnFirstLevelControl.xaml;View\Controls\MenuControl.xaml;View\Controls\MenuRedirectionPopUpControl.xaml;View\FirstLevel.xaml;View\MainWindow.xaml;View\MenuPage.xaml;
+View\Controls\CompositionOnFirstLevelControl.xaml;View\Controls\MenuControl.xaml;View\Controls\MenuRedirectionPopUpControl.xaml;View\FirstLevel.xaml;View\MainWindow.xaml;View\MenuPage.xaml;View\StartPage.xaml;
 
-True
+False
 

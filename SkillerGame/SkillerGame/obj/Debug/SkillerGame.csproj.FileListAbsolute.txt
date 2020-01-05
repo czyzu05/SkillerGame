@@ -27,3 +27,5 @@ C:\Users\Dawid\Desktop\SkillerGame\SkillerGame\SkillerGame\bin\Debug\View\Contro
 C:\Users\Dawid\Desktop\SkillerGame\SkillerGame\SkillerGame\bin\Debug\View\Controls\MenuControl.xaml.cs
 C:\Users\Dawid\Desktop\SkillerGame\SkillerGame\SkillerGame\bin\Debug\View\Controls\MenuRedirectionPopUpControl.xaml.cs
 C:\Users\Dawid\Desktop\SkillerGame\SkillerGame\SkillerGame\obj\Debug\SkillerGame.csprojAssemblyReference.cache
+C:\Users\Dawid\Desktop\SkillerGame\SkillerGame\SkillerGame\obj\Debug\View\StartPage.g.cs
+C:\Users\Dawid\Desktop\SkillerGame\SkillerGame\SkillerGame\obj\Debug\View\StartPage.baml

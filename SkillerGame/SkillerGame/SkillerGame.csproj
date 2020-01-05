@@ -56,6 +56,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\LevelType.cs" />
+    <Compile Include="ViewModel\Commands\ChangePageCommand.cs" />
+    <Compile Include="ViewModel\FirstLevelVM.cs" />
+    <Compile Include="ViewModel\Helpers\NavigateHelper.cs" />
+    <Compile Include="ViewModel\MenuPageVM.cs" />
+    <Compile Include="ViewModel\StartPageVM.cs" />
     <Compile Include="View\Controls\CompositionOnFirstLevelControl.xaml.cs">
       <DependentUpon>CompositionOnFirstLevelControl.xaml</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -73,6 +78,9 @@
     </Compile>
     <Compile Include="View\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
     </Compile>
     <Page Include="View\Controls\CompositionOnFirstLevelControl.xaml">
       <SubType>Designer</SubType>
@@ -109,6 +117,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\StartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -136,9 +148,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\Helpers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="View\Images\error.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

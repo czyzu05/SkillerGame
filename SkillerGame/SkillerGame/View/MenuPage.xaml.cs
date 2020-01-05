@@ -23,6 +23,13 @@ namespace SkillerGame
         public MenuPage()
         {
             InitializeComponent();
+            
+            
+        }
+
+        private void StartButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateHelper.ChangePage(this, "FirstLevel.xaml");
         }
     }
 }

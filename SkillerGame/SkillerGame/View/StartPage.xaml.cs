@@ -13,36 +13,22 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-//TO DO List:Dawid
-//1. Zmiana Page przy uzyciu Command nie Eventu Click
-
-
-
-
 namespace SkillerGame
 {
     /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
+    /// Logika interakcji dla klasy StartPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StartPage : Page
     {
-        public MainWindow()
+        public StartPage()
         {
             InitializeComponent();
-            Main.Content = new StartPage();
-            
         }
 
-        /*
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //zmiana Z MainWindow na MenuPage
-            //MenuPage menuPage = new MenuPage();
-            // this.Content = menuPage;
-            //Main.Navigate(typeof(MenuPage));
-            Main.Content = new MenuPage();
-            
+        {           
+
+            NavigateHelper.ChangePage(this, "MenuPage.xaml");
         }
-        */
     }
 }
