@@ -9,10 +9,10 @@
       d:DesignHeight="850" d:DesignWidth="500"
       Title="FirstLevel">
 
-    <Grid Background="WhiteSmoke">
+    <Grid Background="WhiteSmoke" x:Name="siatka" Margin="0,0,0,10">
         <Grid.Resources>
-            
-            
+
+
         </Grid.Resources>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -39,116 +39,117 @@
         </Grid.RowDefinitions>
 
         <!--1 wiersz -->
-        <Button Grid.Row="0" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="0" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="0" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="0" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="0" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="0" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="0" Grid.Column="6"  FontSize="25" Content="7" />
+        <Button Grid.Row="0" Grid.Column="0"  FontSize="25" Content="7" Tag="1" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="0" Grid.Column="1"  FontSize="25" Content="7" Tag="2" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="0" Grid.Column="2"  FontSize="25" Content="7" Tag="3" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="0" Grid.Column="3"  FontSize="25" Content="7" Tag="4" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="0" Grid.Column="4"  FontSize="25" Content="7" Tag="5" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="0" Grid.Column="5"  FontSize="25" Content="7" Tag="6" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="0" Grid.Column="6"  FontSize="25" Content="7" Tag="7" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
 
         <!--2 wiersz -->
-        <Button Grid.Row="1" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="1" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="1" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="1" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="1" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="1" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="1" Grid.Column="6"  FontSize="25" Content="7" />
+        <Button Grid.Row="1" Grid.Column="0"  FontSize="25" Content="7" Tag="8" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="1" Grid.Column="1"  FontSize="25" Content="7" Tag="9" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="1" Grid.Column="2"  FontSize="25" Content="7" Tag="10" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="1" Grid.Column="3"  FontSize="25" Content="7" Tag="11" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="1" Grid.Column="4"  FontSize="25" Content="7" Tag="12" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="1" Grid.Column="5"  FontSize="25" Content="7" Tag="13" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="1" Grid.Column="6"  FontSize="25" Content="7" Tag="14" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
 
         <!--3 wiersz -->
-        <Button Grid.Row="2" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="2" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="2" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="2" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="2" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="2" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="2" Grid.Column="6"  FontSize="25" Content="7" />
+        <Button Grid.Row="2" Grid.Column="0"  FontSize="25" Content="7" Tag="15" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="2" Grid.Column="1"  FontSize="25" Content="7" Tag="16" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="2" Grid.Column="2"  FontSize="25" Content="7" Tag="17" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="2" Grid.Column="3"  FontSize="25" Content="7" Tag="18" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="2" Grid.Column="4"  FontSize="25" Content="7" Tag="19" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="2" Grid.Column="5"  FontSize="25" Content="7" Tag="20" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="2" Grid.Column="6"  FontSize="25" Content="7" Tag="21" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
 
         <!--4 wiersz -->
-        <Button Grid.Row="3" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="3" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="3" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="3" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="3" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="3" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="3" Grid.Column="6"  FontSize="25" Content="7" />
+        <Button Grid.Row="3" Grid.Column="0"  FontSize="25" Content="7" Tag="22" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="3" Grid.Column="1"  FontSize="25" Content="7" Tag="23" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="3" Grid.Column="2"  FontSize="25" Content="7" Tag="24" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="3" Grid.Column="3"  FontSize="25" Content="7" Tag="25" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="3" Grid.Column="4"  FontSize="25" Content="7" Tag="26" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="3" Grid.Column="5"  FontSize="25" Content="7" Tag="27" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="3" Grid.Column="6"  FontSize="25" Content="7" Tag="28" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
 
         <!--5 wiersz -->
-        <Button Grid.Row="4" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="4" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="4" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="4" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="4" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="4" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="4" Grid.Column="6"  FontSize="25" Content="7" />
+        <Button Grid.Row="4" Grid.Column="0"  FontSize="25" Content="7" Tag="29" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="4" Grid.Column="1"  FontSize="25" Content="7" Tag="30" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="4" Grid.Column="2"  FontSize="25" Content="7" Tag="31" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="4" Grid.Column="3"  FontSize="25" Content="7" Tag="32" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="4" Grid.Column="4"  FontSize="25" Content="7" Tag="33" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="4" Grid.Column="5"  FontSize="25" Content="7" Tag="34" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="4" Grid.Column="6"  FontSize="25" Content="7" Tag="35" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
 
         <!--6 wiersz -->
-        <Button Grid.Row="5" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="5" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="5" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="5" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="5" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="5" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="5" Grid.Column="6"  FontSize="25" Content="7" />
+        <Button Grid.Row="5" Grid.Column="0"  FontSize="25" Content="7" Tag="36" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="5" Grid.Column="1"  FontSize="25" Content="7" Tag="37" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="5" Grid.Column="2"  FontSize="25" Content="7" Tag="38" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="5" Grid.Column="3"  FontSize="25" Content="7" Tag="39" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="5" Grid.Column="4"  FontSize="25" Content="7" Tag="40" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="5" Grid.Column="5"  FontSize="25" Content="7" Tag="41" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="5" Grid.Column="6"  FontSize="25" Content="7" Tag="42" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
 
 
         <!--7 wiersz -->
-        <Button Grid.Row="6" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="6" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="6" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="6" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="6" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="6" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="6" Grid.Column="6"  FontSize="25" Content="7" />
+        <Button Grid.Row="6" Grid.Column="0"  FontSize="25" Content="7" Tag="43" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="6" Grid.Column="1"  FontSize="25" Content="7" Tag="44" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="6" Grid.Column="2"  FontSize="25" Content="7" Tag="45" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="6" Grid.Column="3"  FontSize="25" Content="7" Tag="46" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="6" Grid.Column="4"  FontSize="25" Content="7" Tag="47" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="6" Grid.Column="5"  FontSize="25" Content="7" Tag="48" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="6" Grid.Column="6"  FontSize="25" Content="7" Tag="49" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
 
         <!--8 wiersz -->
-        <Button Grid.Row="7" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="7" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="7" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="7" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="7" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="7" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="7" Grid.Column="6"  FontSize="25" Content="7" />
+        <Button Grid.Row="7" Grid.Column="0"  FontSize="25" Content="7" Tag="50" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="7" Grid.Column="1"  FontSize="25" Content="7" Tag="51" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="7" Grid.Column="2"  FontSize="25" Content="7" Tag="52" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="7" Grid.Column="3"  FontSize="25" Content="7" Tag="53" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="7" Grid.Column="4"  FontSize="25" Content="7" Tag="54" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="7" Grid.Column="5"  FontSize="25" Content="7" Tag="55" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="7" Grid.Column="6"  FontSize="25" Content="7" Tag="56" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
 
         <!--9 wiersz -->
-        <Button Grid.Row="8" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="8" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="8" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="8" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="8" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="8" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="8" Grid.Column="6"  FontSize="25" Content="7" />
+        <Button Grid.Row="8" Grid.Column="0"  FontSize="25" Content="7" Tag="57" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="8" Grid.Column="1"  FontSize="25" Content="7" Tag="58" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="8" Grid.Column="2"  FontSize="25" Content="7" Tag="59" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="8" Grid.Column="3"  FontSize="25" Content="7" Tag="60" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="8" Grid.Column="4"  FontSize="25" Content="7" Tag="61" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="8" Grid.Column="5"  FontSize="25" Content="7" Tag="62" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="8" Grid.Column="6"  FontSize="25" Content="7" Tag="63" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
 
         <!--10 wiersz -->
-        <Button Grid.Row="9" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="9" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="9" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="9" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="9" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="9" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="9" Grid.Column="6"  FontSize="25" Content="7" />
-        
+        <Button Grid.Row="9" Grid.Column="0"  FontSize="25" Content="7" Tag="64" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="9" Grid.Column="1"  FontSize="25" Content="7" Tag="65" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="9" Grid.Column="2"  FontSize="25" Content="7" Tag="66" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="9" Grid.Column="3"  FontSize="25" Content="7" Tag="67" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="9" Grid.Column="4"  FontSize="25" Content="7" Tag="68" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="9" Grid.Column="5"  FontSize="25" Content="7" Tag="69" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="9" Grid.Column="6"  FontSize="25" Content="7" Tag="70" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+
         <!--11 wiersz -->
-        <Button Grid.Row="10" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="10" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="10" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="10" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="10" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="10" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="10" Grid.Column="6"  FontSize="25" Content="7" />
-        
+        <Button Grid.Row="10" Grid.Column="0"  FontSize="25" Content="7" Tag="71" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="10" Grid.Column="1"  FontSize="25" Content="7" Tag="72" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="10" Grid.Column="2"  FontSize="25" Content="7" Tag="73" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="10" Grid.Column="3"  FontSize="25" Content="7" Tag="74" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="10" Grid.Column="4"  FontSize="25" Content="7" Tag="75" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="10" Grid.Column="5"  FontSize="25" Content="7" Tag="76" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="10" Grid.Column="6"  FontSize="25" Content="7" Tag="77" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+
         <!--12 wiersz -->
-        <Button Grid.Row="11" Grid.Column="0"  FontSize="25" Content="7" />
-        <Button Grid.Row="11" Grid.Column="1"  FontSize="25" Content="7" />
-        <Button Grid.Row="11" Grid.Column="2"  FontSize="25" Content="7" />
-        <Button Grid.Row="11" Grid.Column="3"  FontSize="25" Content="7" />
-        <Button Grid.Row="11" Grid.Column="4"  FontSize="25" Content="7" />
-        <Button Grid.Row="11" Grid.Column="5"  FontSize="25" Content="7" />
-        <Button Grid.Row="11" Grid.Column="6"  FontSize="25" Content="7" />
-        
+        <Button Grid.Row="11" Grid.Column="0"  FontSize="25" Content="7" Tag="78" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="11" Grid.Column="1"  FontSize="25" Content="7" Tag="79" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="11" Grid.Column="2"  FontSize="25" Content="7" Tag="80" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="11" Grid.Column="3"  FontSize="25" Content="7" Tag="81" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="11" Grid.Column="4"  FontSize="25" Content="7" Tag="82" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Button Grid.Row="11" Grid.Column="5"  FontSize="25" Content="7" Tag="83" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <TextBlock  Text="Timer" Loaded="StartTimer" x:Name="time" Grid.Column="5" Margin="70,5,0,-5" Grid.Row="11" Grid.ColumnSpan="2" />
+        <!--<Button Grid.Row="11" Grid.Column="6"  FontSize="25" Content="7" Tag="84" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/> -->
+
 
 
     </Grid>
-      
+
 </Page>
