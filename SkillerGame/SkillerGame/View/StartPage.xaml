@@ -21,7 +21,7 @@
 
         <Label Grid.Row="0" Grid.ColumnSpan="2" FontSize="50" Content="Place Holder" VerticalAlignment="Center"/>
 
-        <Button Grid.Row="1" Grid.ColumnSpan="2"  FontSize="20" Content="Zaczynamy" Height="100" Click="Button_Click" />
+        <Button Grid.Row="1" Grid.ColumnSpan="2"  x:Name="letsStartButton"  FontSize="20" Content="Zaczynamy" Height="100"  />
         
     </Grid>
 </Page>

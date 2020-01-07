@@ -11,11 +11,23 @@ namespace SkillerGame
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-       
 
-        public StartPageVM()
+
+        public StartPage StartPage { get; set; }
+
+
+
+        public ChangePageCommand ChangePageCommand { get; set; }
+
+
+
+
+        public StartPageVM(StartPage startPage)
         {
+            StartPage = startPage;
 
+
+            ChangePageCommand = new ChangePageCommand(this);
         }
 
     }

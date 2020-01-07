@@ -9,9 +9,9 @@ namespace SkillerGame
     /// <summary>
     /// Typ Poziomu gry logicznej
     /// </summary>
-    enum LevelType
+    public enum LevelType
     {
-        Unkown,
+
         FirstLevel,
         SecondLevel,
         ThirdLevel

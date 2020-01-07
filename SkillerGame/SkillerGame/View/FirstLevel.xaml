@@ -11,7 +11,15 @@
 
     <Grid Background="WhiteSmoke" x:Name="siatka" Margin="0,0,0,10">
         <Grid.Resources>
+            <Style TargetType="{x:Type Button}" x:Key="menuButton">
+                <Setter Property="Height" Value="50"/>
+                <Setter Property="Width" Value="200"/>
+                <Setter Property="Background" Value="DarkOrange"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="FontSize"  Value="20"/>
 
+            </Style>
 
         </Grid.Resources>
         <Grid.ColumnDefinitions>
@@ -24,6 +32,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -147,6 +156,8 @@
         <Button Grid.Row="11" Grid.Column="5"  FontSize="25" Content="7" Tag="83" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
         <TextBlock  Text="Timer" Loaded="StartTimer" x:Name="time" Grid.Column="5" Margin="70,5,0,-5" Grid.Row="11" Grid.ColumnSpan="2" />
         <!--<Button Grid.Row="11" Grid.Column="6"  FontSize="25" Content="7" Tag="84" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/> -->
+
+        <Button Grid.Row="12" Grid.Column="2" Grid.ColumnSpan="3" x:Name="menuButton" Content="POWRÓT DO MENU"   Style="{StaticResource menuButton}"  />
 
 
 

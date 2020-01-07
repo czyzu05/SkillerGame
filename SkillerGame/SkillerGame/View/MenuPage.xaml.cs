@@ -23,13 +23,25 @@ namespace SkillerGame
         public MenuPage()
         {
             InitializeComponent();
+            Awake();
             
             
         }
 
+        public void Awake()
+        {
+            //Tworzenie instancji ViewModel w codebehind zamiast w XAMLU
+            MenuPageVM vm = new MenuPageVM(this);
+
+            // zrobienie Bindingu w CodeBehind
+            Binding binding = new Binding("ChangePageCommand");
+            binding.Source = vm;
+            startButton.SetBinding(Button.CommandProperty, binding);
+        }
+
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigateHelper.ChangePage(this, "FirstLevel.xaml");
+            //NavigateHelper.ChangePage(this, "FirstLevel.xaml");
         }
     }
 }

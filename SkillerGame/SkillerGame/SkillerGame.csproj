@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\LevelType.cs" />
+    <Compile Include="ViewModel\Commands\ChangeCurrentLevelCommand.cs" />
     <Compile Include="ViewModel\Commands\ChangePageCommand.cs" />
     <Compile Include="ViewModel\FirstLevelVM.cs" />
     <Compile Include="ViewModel\Helpers\NavigateHelper.cs" />

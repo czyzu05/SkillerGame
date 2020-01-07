@@ -23,7 +23,20 @@ namespace SkillerGame
         public FirstLevel()
         {
             InitializeComponent();
+            Awake();
+
             MessageBox.Show("Znajdź i kliknij na liczbę 1");
+        }
+
+        public void Awake()
+        {
+            //Tworzenie instancji ViewModel w codebehind zamiast w XAMLU
+            FirstLevelVM vm = new FirstLevelVM(this);
+
+            // zrobienie Bindingu w CodeBehind
+            Binding binding = new Binding("ChangePageCommand");
+            binding.Source = vm;
+            menuButton.SetBinding(Button.CommandProperty, binding);
         }
 
         public void StartTimer(object o, RoutedEventArgs sender)
