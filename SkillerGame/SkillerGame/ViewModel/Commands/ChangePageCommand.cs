@@ -49,13 +49,19 @@ namespace SkillerGame
         {
 
 
-            //VM.ChangePage(VM.MenuPage, "FirstLevel.xaml");
+            //Zmiana Page z StartPage na MenuPage
             if (VMStartPage != null)
                 NavigateHelper.ChangePage(VMStartPage.StartPage, "MenuPage.xaml");
 
-            if (VMMenuPage != null)
+            //Zmiana Page z MenuPage na FirstLevelPage
+            if (VMMenuPage != null && VMMenuPage.LevelType==LevelType.FirstLevel)               
                 NavigateHelper.ChangePage(VMMenuPage.MenuPage, "FirstLevel.xaml");
 
+            //Zmiana Page z MenuPage na SecondLevelPage
+            if (VMMenuPage != null && VMMenuPage.LevelType == LevelType.SecondLevel)
+                NavigateHelper.ChangePage(VMMenuPage.MenuPage, "SecondLevel.xaml");
+
+            //Zmiana Page z FirstLevelPage na MenuPage
             if (VMFirstLevel != null)
                 NavigateHelper.ChangePage(VMFirstLevel.FirstLevelPage, "MenuPage.xaml");
 

@@ -9,11 +9,11 @@
       d:DesignHeight="850" d:DesignWidth="500"
       Title="MenuPage">
     <Page.Resources>
-        <local:MenuPageVM x:Key="VM"/>
+        
     </Page.Resources>
 
-    <!--Ustawienie DataContext na MenuPage w celu zmiany aktualnie wybranego levela-->
-    <Grid DataContext="{StaticResource VM}"   Background="WhiteSmoke">
+    
+    <Grid  x:Name="mainGrid"   Background="WhiteSmoke">
         <Grid.Resources>
 
 
@@ -75,11 +75,11 @@
 
 
 
-        <TextBlock Grid.ColumnSpan="3" Text="{Binding CurrentPage}"></TextBlock>
+        <TextBlock Grid.ColumnSpan="3" x:Name="levelInfo" ></TextBlock>
         <Image Grid.Row="1" Grid.Column="1"  Grid.RowSpan="2" />
-        <Button Grid.Row="3"  Grid.Column="0" x:Name="backWardButton" Content="Cofnij"  Command="{Binding ChangeCurrentLevelCommand}" Style="{StaticResource navigateButton}"/>
+        <Button Grid.Row="3"  Grid.Column="0" x:Name="backWardButton" Content="Cofnij"    Style="{StaticResource navigateButton}"/>
         <Button Grid.Row="3" Grid.Column="1" x:Name="startButton" Content="Start"  Style="{StaticResource startButton}"  />
-        <Button Grid.Row="3" Grid.Column="2" x:Name="forwardButton" Content="Nastepny" Command="{Binding ChangeCurrentLevelCommand}" Style="{StaticResource navigateButton}" Margin="5,106,5,94" />
+        <Button Grid.Row="3" Grid.Column="2" x:Name="forwardButton" Content="Nastepny"  Style="{StaticResource navigateButton}" />
 
     </Grid>
 

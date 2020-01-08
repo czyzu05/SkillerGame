@@ -37,6 +37,25 @@ namespace SkillerGame
             Binding binding = new Binding("ChangePageCommand");
             binding.Source = vm;
             startButton.SetBinding(Button.CommandProperty, binding);
+
+            //Bindowanie przycisku Next w CodeBehind
+            Binding binding2 = new Binding("ChangeCurrentLevelCommand");
+            binding2.Source = vm;
+            forwardButton.SetBinding(Button.CommandProperty, binding2);
+
+            //Bindowanie przycisku Cofinij w CodeBehind
+            Binding binding3 = new Binding("ChangeCurrentLevelCommand");
+            binding3.Source = vm;
+            backWardButton.SetBinding(Button.CommandProperty, binding3);
+
+            //Bindowanie TextBlocka odpowiedzalnego za wyswietlanie informacjii o aktualnym poziomie
+            Binding binding4 = new Binding("CurrentPage");
+            binding4.Source = vm;
+            levelInfo.SetBinding(TextBlock.TextProperty, binding4);
+
+            
+
+
         }
 
         private void StartButton_Click(object sender, RoutedEventArgs e)

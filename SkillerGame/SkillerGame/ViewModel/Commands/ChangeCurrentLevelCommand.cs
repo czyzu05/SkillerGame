@@ -19,23 +19,26 @@ namespace SkillerGame
 
         }
 
-        public MenuPageVM MenuPage { get; set; }
+        public MenuPageVM VMMenuPage { get; set; }
 
-        public ChangeCurrentLevelCommand()
+        public ChangeCurrentLevelCommand(MenuPageVM vm)
         {
 
-
+            VMMenuPage = vm;
 
         }
 
         public bool CanExecute(object parameter)
         {
-            return false;
+            return true;
         }
 
         public void Execute(object parameter)
         {
             //KOD
+
+            VMMenuPage.CurrentPage = "Poziom 2";
+            VMMenuPage.LevelType = LevelType.SecondLevel;
 
         }
     }
