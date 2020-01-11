@@ -4,17 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SkillerGame"
+        ResizeMode="NoResize"
        
         mc:Ignorable="d"
-        Title="Skiller" Height="850" Width="500">
+        Title="Skiller" Height="880" Width="520">
     
         
         
         <Grid HorizontalAlignment="Center">
-            
-        <Frame x:Name="Main" Height="850" Width="500">
+
+        <Frame NavigationUIVisibility="Hidden" x:Name="Main" Height="850" Width="500">
             
         </Frame>
+            
     </Grid>
     
     

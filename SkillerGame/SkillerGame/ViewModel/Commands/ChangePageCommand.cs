@@ -19,14 +19,19 @@ namespace SkillerGame
 
         }
 
-        public MenuPageVM VMMenuPage { get; set; }
 
-        public StartPageVM VMStartPage { get; set; }
+        private MenuPageVM VMMenuPage { get; set; }
 
-        public FirstLevelVM VMFirstLevel { get; set; }
+        private StartPageVM VMStartPage { get; set; }
+
+        private FirstLevelVM VMFirstLevel { get; set; }
 
         // public Action<object> VM;
 
+        /// <summary>
+        /// Konstruktor który inicjuje ViewModel 
+        /// </summary>
+        /// <param name="vm"></param>
         public ChangePageCommand(object vm)
         {
             //MenuPageVM
@@ -40,11 +45,20 @@ namespace SkillerGame
 
         }
 
+        /// <summary>
+        /// Metoda odpowiedzialna za sprawdzenie czy w danym czasie metoda Execute może zostać wywołana
+        /// </summary>
+        /// <param name="parameter"></param>
+        /// <returns></returns>
         public bool CanExecute(object parameter)
         {
             return true;
         }
 
+        /// <summary>
+        /// Metoda odpowiedzalna za zmiane danego Page na inny Page w zależności od ViewModelu który aktualnie jest obsługiwany przez UI
+        /// </summary>
+        /// <param name="parameter"></param>
         public void Execute(object parameter)
         {
 
@@ -54,15 +68,15 @@ namespace SkillerGame
                 NavigateHelper.ChangePage(VMStartPage.StartPage, "MenuPage.xaml");
 
             //Zmiana Page z MenuPage na FirstLevelPage
-            if (VMMenuPage != null && VMMenuPage.LevelType==LevelType.FirstLevel)               
+            else if (VMMenuPage != null && VMMenuPage.LevelType==LevelType.FirstLevel)               
                 NavigateHelper.ChangePage(VMMenuPage.MenuPage, "FirstLevel.xaml");
 
             //Zmiana Page z MenuPage na SecondLevelPage
-            if (VMMenuPage != null && VMMenuPage.LevelType == LevelType.SecondLevel)
+            else  if (VMMenuPage != null && VMMenuPage.LevelType == LevelType.SecondLevel)
                 NavigateHelper.ChangePage(VMMenuPage.MenuPage, "SecondLevel.xaml");
 
             //Zmiana Page z FirstLevelPage na MenuPage
-            if (VMFirstLevel != null)
+            else if (VMFirstLevel != null)
                 NavigateHelper.ChangePage(VMFirstLevel.FirstLevelPage, "MenuPage.xaml");
 
 

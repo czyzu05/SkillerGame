@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("view/controls/compositiononfirstlevelcontrol.xaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("view/images/firstlevelimage.png")]
 
 

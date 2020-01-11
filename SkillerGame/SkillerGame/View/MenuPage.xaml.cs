@@ -20,15 +20,22 @@ namespace SkillerGame
     /// </summary>
     public partial class MenuPage : Page
     {
+
+        /// <summary>
+        /// Standardowy Konstruktor inicjujący komponenty z xamla i inicjujący Binding
+        /// </summary>
         public MenuPage()
         {
             InitializeComponent();
-            Awake();
+            CodeBehindBinding();
             
             
         }
 
-        public void Awake()
+        /// <summary>
+        /// Metoda odpowiedzialna za code behind Binding 
+        /// </summary>
+        public void CodeBehindBinding()
         {
             //Tworzenie instancji ViewModel w codebehind zamiast w XAMLU
             MenuPageVM vm = new MenuPageVM(this);
@@ -53,14 +60,14 @@ namespace SkillerGame
             binding4.Source = vm;
             levelInfo.SetBinding(TextBlock.TextProperty, binding4);
 
-            
+
+
 
 
         }
 
-        private void StartButton_Click(object sender, RoutedEventArgs e)
-        {
-            //NavigateHelper.ChangePage(this, "FirstLevel.xaml");
-        }
+        
+
+        
     }
 }

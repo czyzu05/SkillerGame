@@ -12,6 +12,9 @@ namespace SkillerGame
     /// </summary>
     public class ChangeCurrentLevelCommand : ICommand
     {
+        /// <summary>
+        /// Event odpowiedzialny sprawdzanie czy można wywołać metodę Execute
+        /// </summary>
         public event EventHandler CanExecuteChanged
         {
             add { CommandManager.RequerySuggested += value; }
@@ -19,8 +22,13 @@ namespace SkillerGame
 
         }
 
-        public MenuPageVM VMMenuPage { get; set; }
 
+        private MenuPageVM VMMenuPage { get; }
+
+        /// <summary>
+        /// Konstruktor który inicjuje pobrany z ViewModel MenuPageVM 
+        /// </summary>
+        /// <param name="vm"></param>
         public ChangeCurrentLevelCommand(MenuPageVM vm)
         {
 
@@ -28,17 +36,25 @@ namespace SkillerGame
 
         }
 
+        /// <summary>
+        /// Metoda odpowiedzialna za sprawdzenie czy w danym czasie metoda Execute może zostać wywołana
+        /// </summary>
+        /// <param name="parameter"></param>
+        /// <returns></returns>
         public bool CanExecute(object parameter)
         {
             return true;
         }
 
+        /// <summary>
+        /// Metoda odpowiedzialna wywołuje metodę ChangeCurrentLevel która odpowiada za zmiane wartości Properties CurrentPage i LevelType 
+        /// </summary>
+        /// <param name="parameter"></param>
         public void Execute(object parameter)
         {
-            //KOD
 
-            VMMenuPage.CurrentPage = "Poziom 2";
-            VMMenuPage.LevelType = LevelType.SecondLevel;
+            NavigateHelper.ChangeCurrentLevel(VMMenuPage);
+
 
         }
     }

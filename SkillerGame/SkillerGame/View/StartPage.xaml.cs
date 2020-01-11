@@ -20,13 +20,19 @@ namespace SkillerGame
     /// </summary>
     public partial class StartPage : Page
     {
+        /// <summary>
+        /// Standardowy Konstruktor inicjujący komponenty z xamla i inicjujący Binding
+        /// </summary>
         public StartPage()
         {
             InitializeComponent();
-            Awake();
+            CodeBehindBinding();
         }
 
-        public void Awake()
+        /// <summary>
+        /// Metoda odpowiedzialna za code behind Binding 
+        /// </summary>
+        public void CodeBehindBinding()
         {
             //Tworzenie instancji ViewModel w codebehind zamiast w XAMLU
             StartPageVM vm = new StartPageVM(this);
@@ -37,10 +43,6 @@ namespace SkillerGame
             letsStartButton.SetBinding(Button.CommandProperty, binding);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {           
-
-          //  NavigateHelper.ChangePage(this, "MenuPage.xaml");
-        }
+        
     }
 }

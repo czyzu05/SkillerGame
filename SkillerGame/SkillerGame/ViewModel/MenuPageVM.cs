@@ -7,16 +7,29 @@ using System.Threading.Tasks;
 
 namespace SkillerGame
 {
+    /// <summary>
+    /// ViewModel dla Menu wybierania Poziomów
+    /// </summary>
     public class MenuPageVM : INotifyPropertyChanged
     {
+
+        /// <summary>
+        /// Standardowy event z interfejsu INotifyPropertyChanged 
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public MenuPage MenuPage { get; set; }
+
+        /// <summary>
+        /// Propierties która ma za zadanie przechowywać Page z pobrany z View 
+        /// </summary>
+        public MenuPage MenuPage { get;  }
 
 
         private  string currentPage;
-
-        public  string CurrentPage
+        /// <summary>
+        /// Properties przechowuje aktualny Page w postaci string 
+        /// </summary>
+        public string CurrentPage
         {
             get { return currentPage; }
             set
@@ -28,8 +41,10 @@ namespace SkillerGame
 
 
         private  LevelType levelType;
-
-        public  LevelType LevelType
+        /// <summary>
+        /// Properties przechowuje typ poziomu
+        /// </summary>
+        public LevelType LevelType
         {
             get { return levelType; }
             set
@@ -39,14 +54,22 @@ namespace SkillerGame
             }
         }
 
+        /// <summary>
+        /// Properties przechowuje Komęde do zmiany Page
+        /// </summary>
+        public ChangePageCommand ChangePageCommand { get;  }
 
-        public ChangePageCommand ChangePageCommand { get; set; }
+        /// <summary>
+        /// Properties przechowuje Komęde do zmiany aktualnego Poziomu w Menu Głównym
+        /// </summary>
+        public ChangeCurrentLevelCommand ChangeCurrentLevelCommand { get;  }
 
-        public ChangeCurrentLevelCommand ChangeCurrentLevelCommand { get; set; }
-
-        
 
 
+        /// <summary>
+        ///  Konstruktor który inicjuje pobrany z View MenuPage oraz kilka zmiennych
+        /// </summary>
+        /// <param name="menuPage">MenuPage pobrany z View</param>
         public MenuPageVM(MenuPage menuPage)
         {
             LevelType = LevelType.FirstLevel;
@@ -61,7 +84,10 @@ namespace SkillerGame
 
 
 
-
+        /// <summary>
+        /// Metoda która po wywołaniu w setterze zbindowanej Properties sprawia że każda zmiana danej Propeties w ViewModel zmienia UI
+        /// </summary>
+        /// <param name="propertyName"></param>
         private void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

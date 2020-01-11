@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillerGame", "SkillerGame\SkillerGame.csproj", "{8A72BF85-BFDE-4603-9E52-A1CD1E6BB25F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{97DFAFC9-3424-4D0A-8B1D-E78CCF13E603}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{1BB66859-D9D0-41EF-AD1B-8BE0738036B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{8A72BF85-BFDE-4603-9E52-A1CD1E6BB25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A72BF85-BFDE-4603-9E52-A1CD1E6BB25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A72BF85-BFDE-4603-9E52-A1CD1E6BB25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97DFAFC9-3424-4D0A-8B1D-E78CCF13E603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DFAFC9-3424-4D0A-8B1D-E78CCF13E603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DFAFC9-3424-4D0A-8B1D-E78CCF13E603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DFAFC9-3424-4D0A-8B1D-E78CCF13E603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB66859-D9D0-41EF-AD1B-8BE0738036B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB66859-D9D0-41EF-AD1B-8BE0738036B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB66859-D9D0-41EF-AD1B-8BE0738036B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB66859-D9D0-41EF-AD1B-8BE0738036B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

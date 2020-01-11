@@ -25,7 +25,7 @@ using System.Windows.Shapes;
 //  3.1 Sprobowac zrobic cos takiego ze gdy klikne przcisk zmiany w MenuPage to wtedy Poziom 1 zmienia sie na Poziom 2 i zrobic konwerter ktory pobiera sobie Value Poziom 2 i nastepnie w jakis sposob Command
 //to obsluguje ze zmienia ChangePage(..., FirstLevel) na ChangePage(..., SecondLevel)
 //  3.2 Zrobic cos takiego ze np Poziom 1 zostanie skonwertowany na FirstLevel.xaml Poziom 2 na SecondLevel.xaml itd..
-//  3.3 VisualTreeHelper moze sie przydac 
+//  3.3 VisualTreeHelper moze sie przydac , moze stworzyc Wizualne drzewo logiczne dla buttonow poprzedni/nastepny 
 
 
 
@@ -37,6 +37,10 @@ namespace SkillerGame
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        /// <summary>
+        /// Standardowy Konstruktor inicjujący komponenty z xamla i ustawiający Content domyślny Frame na StartPage
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -44,16 +48,6 @@ namespace SkillerGame
             
         }
 
-        /*
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //zmiana Z MainWindow na MenuPage
-            //MenuPage menuPage = new MenuPage();
-            // this.Content = menuPage;
-            //Main.Navigate(typeof(MenuPage));
-            Main.Content = new MenuPage();
-            
-        }
-        */
+        
     }
 }

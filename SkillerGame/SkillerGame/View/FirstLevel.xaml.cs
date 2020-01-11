@@ -20,15 +20,21 @@ namespace SkillerGame
     /// </summary>
     public partial class FirstLevel : Page
     {
+        /// <summary>
+        /// Standardowy Konstruktor inicjujący komponenty z xamla i inicjujący Binding
+        /// </summary>
         public FirstLevel()
         {
             InitializeComponent();
-            Awake();
+            CodeBehindBinding();
 
             MessageBox.Show("Znajdź i kliknij na liczbę 1");
         }
 
-        public void Awake()
+        /// <summary>
+        /// Metoda odpowiedzialna za code behind Binding 
+        /// </summary>
+        public void CodeBehindBinding()
         {
             //Tworzenie instancji ViewModel w codebehind zamiast w XAMLU
             FirstLevelVM vm = new FirstLevelVM(this);
