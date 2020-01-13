@@ -81,3 +81,6 @@ D:\SkillerGame\SkillerGame\SkillerGame\obj\Debug\SkillerGame.exe
 D:\SkillerGame\SkillerGame\SkillerGame\obj\Debug\SkillerGame.pdb
 D:\SkillerGame\SkillerGame\SkillerGame\obj\Debug\View\SecondLevel.g.cs
 D:\SkillerGame\SkillerGame\SkillerGame\obj\Debug\View\SecondLevel.baml
+D:\SkillerGame\SkillerGame\SkillerGame\obj\Debug\View\ThirdLevel.g.cs
+D:\SkillerGame\SkillerGame\SkillerGame\obj\Debug\View\ThirdLevel.baml
+D:\SkillerGame\SkillerGame\SkillerGame\obj\Debug\GeneratedInternalTypeHelper.g.cs

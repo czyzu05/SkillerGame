@@ -55,7 +55,7 @@
             <!--Image Style-->
             <Style TargetType="{x:Type Image}">
                 <Setter Property="Margin" Value="10,10,10,10"/>
-                <Setter Property="Source" Value="Images/FirstLevelImage.png"/>
+                
             </Style>
 
         </Grid.Resources>
@@ -74,12 +74,14 @@
         </Grid.ColumnDefinitions>
 
 
-        
+        <!--Source="Images/FirstLevelImage.png"-->
         <TextBlock Grid.ColumnSpan="3" x:Name="levelInfo" ></TextBlock>
-        <Image Grid.Row="1" Grid.Column="1"  Grid.RowSpan="2" />
-        <Button Grid.Row="3"  Grid.Column="0" x:Name="backWardButton" Content="Cofnij"    Style="{StaticResource navigateButton}"/>
+        <Image Grid.Row="1" Grid.Column="1"  Grid.RowSpan="2" x:Name="imageLevel" />
+        <Button Grid.Row="3"  Grid.Column="0" x:Name="backWardButton" Content="Cofnij" CommandParameter="{x:Static local:ButtonType.PreviousButton}"    Style="{StaticResource navigateButton}"/>
         <Button Grid.Row="3" Grid.Column="1" x:Name="startButton" Content="Start"  Style="{StaticResource startButton}"  />
-        <Button Grid.Row="3" Grid.Column="2" x:Name="forwardButton" Content="Nastepny"  Style="{StaticResource navigateButton}" />
+        <Button Grid.Row="3" Grid.Column="2" x:Name="forwardButton" Content="Nastepny" CommandParameter="{x:Static local:ButtonType.NextButton}"  Style="{StaticResource navigateButton}"/>
+
+
 
     </Grid>
 

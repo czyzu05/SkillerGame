@@ -55,13 +55,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\ButtonType.cs" />
     <Compile Include="Model\LevelType.cs" />
+    <Compile Include="Model\ThirdLevelData.cs" />
     <Compile Include="ViewModel\Commands\ChangeCurrentLevelCommand.cs" />
     <Compile Include="ViewModel\Commands\ChangePageCommand.cs" />
     <Compile Include="ViewModel\FirstLevelVM.cs" />
     <Compile Include="ViewModel\Helpers\NavigateHelper.cs" />
     <Compile Include="ViewModel\MenuPageVM.cs" />
     <Compile Include="ViewModel\StartPageVM.cs" />
+    <Compile Include="ViewModel\ThirdLevelVM.cs" />
     <Compile Include="View\FirstLevel.xaml.cs">
       <DependentUpon>FirstLevel.xaml</DependentUpon>
     </Compile>
@@ -73,6 +76,9 @@
     </Compile>
     <Compile Include="View\StartPage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ThirdLevel.xaml.cs">
+      <DependentUpon>ThirdLevel.xaml</DependentUpon>
     </Compile>
     <Page Include="View\FirstLevel.xaml">
       <SubType>Designer</SubType>
@@ -99,6 +105,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\StartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ThirdLevel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

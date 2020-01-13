@@ -42,7 +42,12 @@ namespace SkillerGame
         /// <param name="parameter"></param>
         /// <returns></returns>
         public bool CanExecute(object parameter)
-        {            
+        {
+            var buttonType =(ButtonType)Enum.Parse(typeof(ButtonType), parameter.ToString());
+
+            if ((VMMenuPage.LevelType == LevelType.ThirdLevel && buttonType ==ButtonType.NextButton ) || (VMMenuPage.LevelType == LevelType.FirstLevel && buttonType ==ButtonType.PreviousButton ))
+                return false;
+
             return true;
         }
 

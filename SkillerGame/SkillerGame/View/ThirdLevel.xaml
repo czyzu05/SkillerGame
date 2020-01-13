@@ -1,0 +1,82 @@
+﻿<Page x:Class="SkillerGame.ThirdLevel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SkillerGame"
+      mc:Ignorable="d" 
+      d:DesignHeight="880" d:DesignWidth="520"
+      Title="ThirdLevel">
+
+    <Page.Resources>
+        
+    </Page.Resources>
+
+    <Grid Background="WhiteSmoke" x:Name="siatka" Margin="0,0,0,10">
+        <Grid.Resources>
+            <Style TargetType="{x:Type Button}" x:Key="menuButton">
+                <Setter Property="Height" Value="50"/>
+                <Setter Property="Width" Value="200"/>
+                <Setter Property="Background" Value="DarkOrange"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="FontSize"  Value="20"/>
+
+            </Style>
+
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            
+        </Grid.RowDefinitions>
+
+        <!--1 wiersz -->
+        <Button Grid.Row="0" Grid.Column="0"  FontSize="25" Content="1"  x:Name="button1"/>
+        <Button Grid.Row="0" Grid.Column="1"  FontSize="25" Content="2"  x:Name="button2" />
+        <Button Grid.Row="0" Grid.Column="2"  FontSize="25" Content="3"  x:Name="button3" />
+        <Button Grid.Row="0" Grid.Column="3"  FontSize="25" Content="4"  x:Name="button4"/>
+        <Button Grid.Row="0" Grid.Column="4"  FontSize="25" Content="5"  x:Name="button5"/>
+        
+
+        <!--2 wiersz -->
+        <Button Grid.Row="1" Grid.Column="0"  FontSize="25" Content="6" x:Name="button6"/>
+        <Button Grid.Row="1" Grid.Column="1"  FontSize="25" Content="7" x:Name="button7"/>
+        <Button Grid.Row="1" Grid.Column="2"  FontSize="25" Content="8" x:Name="button8"/>
+        <Button Grid.Row="1" Grid.Column="3"  FontSize="25" Content="9" x:Name="button9"/>
+        <Button Grid.Row="1" Grid.Column="4"  FontSize="25" Content="10" x:Name="button10"/>
+        
+
+        <!--3 wiersz -->
+        <Button Grid.Row="2" Grid.Column="0"  FontSize="25" Content="11" x:Name="button11"/>
+        <Button Grid.Row="2" Grid.Column="1"  FontSize="25" Content="12" x:Name="button12"/>
+        <Button Grid.Row="2" Grid.Column="2"  FontSize="25" Content="13" x:Name="button13"/>
+        <Button Grid.Row="2" Grid.Column="3"  FontSize="25" Content="14" x:Name="button14"/>
+        <Button Grid.Row="2" Grid.Column="4"  FontSize="25" Content="15" x:Name="button15"/>
+        
+
+        <!--4 wiersz -->
+        <Button Grid.Row="3" Grid.Column="0"  FontSize="25" Content="16" x:Name="button16"/>
+        <Button Grid.Row="3" Grid.Column="1"  FontSize="25" Content="17" x:Name="button17"/>
+        <Button Grid.Row="3" Grid.Column="2"  FontSize="25" Content="18" x:Name="button18"/>
+        <Button Grid.Row="3" Grid.Column="3"  FontSize="25" Content="19" x:Name="button19"/>
+        <Button Grid.Row="3" Grid.Column="4"  FontSize="25" Content="20" x:Name="button20"/>
+        
+
+      
+        <Button Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" x:Name="menuButton" Content="POWRÓT DO MENU"   Style="{StaticResource menuButton}"  />
+
+
+
+    </Grid>
+</Page>

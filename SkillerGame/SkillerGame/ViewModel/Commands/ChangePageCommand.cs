@@ -26,6 +26,8 @@ namespace SkillerGame
 
         private FirstLevelVM VMFirstLevel { get; set; }
 
+        private ThirdLevelVM VMThirdLevel { get; set; }
+
         // public Action<object> VM;
 
         /// <summary>
@@ -42,6 +44,9 @@ namespace SkillerGame
 
             //FirstLevelVM
             VMFirstLevel = vm as FirstLevelVM;
+
+            //ThirdLevelVM
+            VMThirdLevel = vm as ThirdLevelVM;
 
         }
 
@@ -68,16 +73,26 @@ namespace SkillerGame
                 NavigateHelper.ChangePage(VMStartPage.StartPage, "MenuPage.xaml");
 
             //Zmiana Page z MenuPage na FirstLevelPage
-            else if (VMMenuPage != null && VMMenuPage.LevelType==LevelType.FirstLevel)               
+            else if (VMMenuPage != null && VMMenuPage.LevelType == LevelType.FirstLevel)
                 NavigateHelper.ChangePage(VMMenuPage.MenuPage, "FirstLevel.xaml");
 
             //Zmiana Page z MenuPage na SecondLevelPage
-            else  if (VMMenuPage != null && VMMenuPage.LevelType == LevelType.SecondLevel)
+            else if (VMMenuPage != null && VMMenuPage.LevelType == LevelType.SecondLevel)
                 NavigateHelper.ChangePage(VMMenuPage.MenuPage, "SecondLevel.xaml");
 
+            //Zmiana Page z MenuPage na ThirdLevelPage
+            else if (VMMenuPage != null && VMMenuPage.LevelType == LevelType.ThirdLevel)
+                NavigateHelper.ChangePage(VMMenuPage.MenuPage, "ThirdLevel.xaml");
+
             //Zmiana Page z FirstLevelPage na MenuPage
-            else if (VMFirstLevel != null)
+            else if (VMFirstLevel != null)          
                 NavigateHelper.ChangePage(VMFirstLevel.FirstLevelPage, "MenuPage.xaml");
+
+            //Zmiana Page z ThirdLevelPage na MenuPage
+            else if (VMThirdLevel != null)
+                NavigateHelper.ChangePage(VMThirdLevel.ThirdLevelPage, "MenuPage.xaml");
+
+
 
 
         }

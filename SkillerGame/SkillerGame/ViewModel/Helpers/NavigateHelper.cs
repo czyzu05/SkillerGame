@@ -52,13 +52,23 @@ namespace SkillerGame
             if (VMMenuPage.LevelType == LevelType.FirstLevel)
             {
                 VMMenuPage.CurrentPage = "Poziom 2";
+                VMMenuPage.CurrentImage = "Images/error.png";
                 VMMenuPage.LevelType = LevelType.SecondLevel;
+                
 
             }
 
             else if (VMMenuPage.LevelType == LevelType.SecondLevel)
             {
+                VMMenuPage.CurrentPage = "Poziom 3";
+                VMMenuPage.CurrentImage = "Images/error.png";
+                VMMenuPage.LevelType = LevelType.ThirdLevel;
+            }
+
+            else if (VMMenuPage.LevelType == LevelType.ThirdLevel)
+            {
                 VMMenuPage.CurrentPage = "Poziom 1";
+                VMMenuPage.CurrentImage = "Images/FirstLevelImage.png";
                 VMMenuPage.LevelType = LevelType.FirstLevel;
             }
 
