@@ -58,7 +58,9 @@ namespace SkillerGame
         public void Execute(object parameter)
         {
 
-            NavigateHelper.ChangeCurrentLevel(VMMenuPage);
+            var buttonType = (ButtonType)Enum.Parse(typeof(ButtonType), parameter.ToString());
+
+            NavigateHelper.ChangeCurrentLevel(VMMenuPage,buttonType);
 
 
         }

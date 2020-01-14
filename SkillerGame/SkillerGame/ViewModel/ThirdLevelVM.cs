@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace SkillerGame
 {
@@ -49,58 +50,17 @@ namespace SkillerGame
 
         public void RandomizePositionsOfNumbers()
         {
-            List<string> numbers = new List<string>(20);
-            numbers.Add("1");
-            numbers.Add("2");
-            numbers.Add("3");
-            numbers.Add("4");
-            numbers.Add("5");
-            numbers.Add("6");
-            numbers.Add("7");
-            numbers.Add("8");
-            numbers.Add("9");
-            numbers.Add("10");
-            numbers.Add("11");
-            numbers.Add("12");
-            numbers.Add("13");
-            numbers.Add("14");
-            numbers.Add("15");
-            numbers.Add("16");
-            numbers.Add("17");
-            numbers.Add("18");
-            numbers.Add("19");
-            numbers.Add("20");
-
+           
+            List<Button> buttons = ThirdLevelData.SetListOfButtons(ThirdLevelPage);
+            List<string> numbers = ThirdLevelData.SetListOfNumbers();
+                
             var rand = new Random();
             var randomList = numbers.OrderBy(x => rand.Next()).ToList();
-
-            //1 wiersz
-            ThirdLevelPage.button1.Content = randomList.ElementAt(0);
-            ThirdLevelPage.button2.Content = randomList.ElementAt(1);
-            ThirdLevelPage.button3.Content = randomList.ElementAt(2);
-            ThirdLevelPage.button4.Content = randomList.ElementAt(3);
-            ThirdLevelPage.button5.Content = randomList.ElementAt(4);
-
-            //2 wiersz
-            ThirdLevelPage.button6.Content = randomList.ElementAt(5);
-            ThirdLevelPage.button7.Content = randomList.ElementAt(6);
-            ThirdLevelPage.button8.Content = randomList.ElementAt(7);
-            ThirdLevelPage.button9.Content = randomList.ElementAt(8);
-            ThirdLevelPage.button10.Content = randomList.ElementAt(9);
-
-            //3 wiersz
-            ThirdLevelPage.button11.Content = randomList.ElementAt(10);
-            ThirdLevelPage.button12.Content = randomList.ElementAt(11);
-            ThirdLevelPage.button13.Content = randomList.ElementAt(12);
-            ThirdLevelPage.button14.Content = randomList.ElementAt(13);
-            ThirdLevelPage.button15.Content = randomList.ElementAt(14);
-
-            //4 wiersz
-            ThirdLevelPage.button16.Content = randomList.ElementAt(15);
-            ThirdLevelPage.button17.Content = randomList.ElementAt(16);
-            ThirdLevelPage.button18.Content = randomList.ElementAt(17);
-            ThirdLevelPage.button19.Content = randomList.ElementAt(18);
-            ThirdLevelPage.button20.Content = randomList.ElementAt(19);
+            
+            for(int i=0;i<buttons.Count;i++)
+            {                
+                buttons[i].Content = randomList.ElementAt(i);
+            }
 
         }
 
