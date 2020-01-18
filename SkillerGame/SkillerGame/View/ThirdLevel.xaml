@@ -6,13 +6,31 @@
       xmlns:local="clr-namespace:SkillerGame"
       mc:Ignorable="d" 
       d:DesignHeight="880" d:DesignWidth="520"
+      Background="WhiteSmoke"
       Title="ThirdLevel">
 
     <Page.Resources>
         
     </Page.Resources>
+    <StackPanel>
+        <StackPanel.Resources>
+            <Style TargetType="{x:Type TextBlock}" x:Key="SecondsInfo">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Background" Value="DarkOrange"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Width" Value="320"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="TextAlignment" Value="Center"/>
 
-    <Grid Background="WhiteSmoke" x:Name="siatka" Margin="0,0,0,10">
+            </Style> 
+        </StackPanel.Resources>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Pozostała liczba sekund:"  Style="{StaticResource SecondsInfo}" ></TextBlock>
+            <TextBlock Width="200" Height="30" Text="15" x:Name="SecondsInfo" Style="{StaticResource SecondsInfo}"></TextBlock>
+        </StackPanel>
+        <Grid  Height="850" x:Name="siatka" Margin="0,0,0,10">
         <Grid.Resources>
             <Style TargetType="{x:Type Button}" x:Key="menuButton">
                 <Setter Property="Height" Value="50"/>
@@ -30,7 +48,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>           
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -42,35 +60,35 @@
         </Grid.RowDefinitions>
 
         <!--1 wiersz -->
-        <Button Grid.Row="0" Grid.Column="0"  FontSize="25" Content="1"  x:Name="button1"/>
-        <Button Grid.Row="0" Grid.Column="1"  FontSize="25" Content="2"  x:Name="button2" />
-        <Button Grid.Row="0" Grid.Column="2"  FontSize="25" Content="3"  x:Name="button3" />
-        <Button Grid.Row="0" Grid.Column="3"  FontSize="25" Content="4"  x:Name="button4"/>
-        <Button Grid.Row="0" Grid.Column="4"  FontSize="25" Content="5"  x:Name="button5"/>
+        <Button Grid.Row="0" Grid.Column="0"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"   x:Name="button1"/>
+        <Button Grid.Row="0" Grid.Column="1"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"   x:Name="button2" />
+        <Button Grid.Row="0" Grid.Column="2"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"   x:Name="button3" />
+        <Button Grid.Row="0" Grid.Column="3"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"   x:Name="button4"/>
+        <Button Grid.Row="0" Grid.Column="4"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"   x:Name="button5"/>
         
 
         <!--2 wiersz -->
-        <Button Grid.Row="1" Grid.Column="0"  FontSize="25" Content="6" x:Name="button6"/>
-        <Button Grid.Row="1" Grid.Column="1"  FontSize="25" Content="7" x:Name="button7"/>
-        <Button Grid.Row="1" Grid.Column="2"  FontSize="25" Content="8" x:Name="button8"/>
-        <Button Grid.Row="1" Grid.Column="3"  FontSize="25" Content="9" x:Name="button9"/>
-        <Button Grid.Row="1" Grid.Column="4"  FontSize="25" Content="10" x:Name="button10"/>
+        <Button Grid.Row="1" Grid.Column="0"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="6" x:Name="button6"/>
+        <Button Grid.Row="1" Grid.Column="1"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="7" x:Name="button7"/>
+        <Button Grid.Row="1" Grid.Column="2"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="8" x:Name="button8"/>
+        <Button Grid.Row="1" Grid.Column="3"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="9" x:Name="button9"/>
+        <Button Grid.Row="1" Grid.Column="4"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="10" x:Name="button10"/>
         
 
         <!--3 wiersz -->
-        <Button Grid.Row="2" Grid.Column="0"  FontSize="25" Content="11" x:Name="button11"/>
-        <Button Grid.Row="2" Grid.Column="1"  FontSize="25" Content="12" x:Name="button12"/>
-        <Button Grid.Row="2" Grid.Column="2"  FontSize="25" Content="13" x:Name="button13"/>
-        <Button Grid.Row="2" Grid.Column="3"  FontSize="25" Content="14" x:Name="button14"/>
-        <Button Grid.Row="2" Grid.Column="4"  FontSize="25" Content="15" x:Name="button15"/>
+        <Button Grid.Row="2" Grid.Column="0"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="11" x:Name="button11"/>
+        <Button Grid.Row="2" Grid.Column="1"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="12" x:Name="button12"/>
+        <Button Grid.Row="2" Grid.Column="2"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="13" x:Name="button13"/>
+        <Button Grid.Row="2" Grid.Column="3"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="14" x:Name="button14"/>
+        <Button Grid.Row="2" Grid.Column="4"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="15" x:Name="button15"/>
         
 
         <!--4 wiersz -->
-        <Button Grid.Row="3" Grid.Column="0"  FontSize="25" Content="16" x:Name="button16"/>
-        <Button Grid.Row="3" Grid.Column="1"  FontSize="25" Content="17" x:Name="button17"/>
-        <Button Grid.Row="3" Grid.Column="2"  FontSize="25" Content="18" x:Name="button18"/>
-        <Button Grid.Row="3" Grid.Column="3"  FontSize="25" Content="19" x:Name="button19"/>
-        <Button Grid.Row="3" Grid.Column="4"  FontSize="25" Content="20" x:Name="button20"/>
+        <Button Grid.Row="3" Grid.Column="0"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="16" x:Name="button16"/>
+        <Button Grid.Row="3" Grid.Column="1"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="17" x:Name="button17"/>
+        <Button Grid.Row="3" Grid.Column="2"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="18" x:Name="button18"/>
+        <Button Grid.Row="3" Grid.Column="3"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="19" x:Name="button19"/>
+        <Button Grid.Row="3" Grid.Column="4"  FontSize="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" Content="20" x:Name="button20"/>
         
 
       
@@ -79,4 +97,5 @@
 
 
     </Grid>
+    </StackPanel>
 </Page>

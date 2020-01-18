@@ -85,12 +85,15 @@ namespace SkillerGame
                 NavigateHelper.ChangePage(VMMenuPage.MenuPage, "ThirdLevel.xaml");
 
             //Zmiana Page z FirstLevelPage na MenuPage
-            else if (VMFirstLevel != null)          
+            else if (VMFirstLevel != null)
                 NavigateHelper.ChangePage(VMFirstLevel.FirstLevelPage, "MenuPage.xaml");
 
             //Zmiana Page z ThirdLevelPage na MenuPage
             else if (VMThirdLevel != null)
+            {
+                VMThirdLevel.Timer.Stop();
                 NavigateHelper.ChangePage(VMThirdLevel.ThirdLevelPage, "MenuPage.xaml");
+            }
 
 
 

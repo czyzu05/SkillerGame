@@ -12,7 +12,7 @@ namespace SkillerGame
     /// <summary>
     /// Klasa przechowuje w sobie metody które są przydatne przy nawigowaniu
     /// </summary>
-    public class NavigateHelper
+    public static class NavigateHelper
     {
         private static MenuPageVM VMMenuPage;
 

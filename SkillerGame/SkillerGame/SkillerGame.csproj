@@ -60,6 +60,7 @@
     <Compile Include="Model\ThirdLevelData.cs" />
     <Compile Include="ViewModel\Commands\ChangeCurrentLevelCommand.cs" />
     <Compile Include="ViewModel\Commands\ChangePageCommand.cs" />
+    <Compile Include="ViewModel\Commands\CheckNumberCommand.cs" />
     <Compile Include="ViewModel\FirstLevelVM.cs" />
     <Compile Include="ViewModel\Helpers\NavigateHelper.cs" />
     <Compile Include="ViewModel\MenuPageVM.cs" />
