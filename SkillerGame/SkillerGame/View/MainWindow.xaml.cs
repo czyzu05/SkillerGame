@@ -21,6 +21,8 @@ using System.Windows.Shapes;
 //2 Aby zrobic to ze np Poziom [1](LevelType.FirstLevel) , Poziom [2](LevelType.SecondLevel) to wystarczy zrobic 2 TextBlocki w StackPanelu , 1 TextBlock odpowiada za 
 //wyswietlanie "Poziom" a drugi bedzie Zbindowany do Properties , zas StacPanel bedzie mial ustawione Orientation na Horizontal
 //3 Mozna stworzyc ThirdLevelDataProperty w ViewModelu 
+//4 Zrobic cos takiego , stworzyc ENUM z value: OutOfTime , WrongNumber , GoodNumber , Koniec , nastepnie stpwrzyc 1 metode ktora bedzie rozpatrzala te 4 ENUMY , te ENYM Value beda ustawiane 
+// w metoddzie CheckNumber
 
 
 

@@ -58,6 +58,7 @@
     <Compile Include="Model\ButtonType.cs" />
     <Compile Include="Model\LevelType.cs" />
     <Compile Include="Model\ThirdLevelData.cs" />
+    <Compile Include="Model\ThirdLevelStateType.cs" />
     <Compile Include="ViewModel\Commands\ChangeCurrentLevelCommand.cs" />
     <Compile Include="ViewModel\Commands\ChangePageCommand.cs" />
     <Compile Include="ViewModel\Commands\CheckNumberCommand.cs" />

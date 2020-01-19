@@ -12,9 +12,10 @@ namespace SkillerGame
     public enum LevelType
     {
 
-        FirstLevel,
+        FirstLevel=1,
         SecondLevel,
         ThirdLevel
 
+            
     }
 }

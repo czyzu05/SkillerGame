@@ -51,37 +51,44 @@ namespace SkillerGame
             VMMenuPage = vm;
             ButtonType = buttonType;
             var currentSelectedLevel = VMMenuPage.LevelType;            
+           
 
+
+
+            //zmiana z Level 1 na Level 2
             if (currentSelectedLevel == LevelType.FirstLevel && ButtonType == ButtonType.NextButton)
             {
-                VMMenuPage.CurrentPage = "Poziom 2";
+                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel+1);
                 VMMenuPage.CurrentImage = "Images/error.png";
-                VMMenuPage.LevelType = LevelType.SecondLevel;
+                VMMenuPage.LevelType = currentSelectedLevel + 1;
                 
 
             }
 
-            //Do Poprawy
-            //Zrobic ze np Poziom [LevelType.FirstLevel](liczba np :1,2,3 itd)
+            //Do Poprawy 
+            //zmienic na switch
+            //zmiana z Level 2 na Level 1
             else if (currentSelectedLevel == LevelType.SecondLevel && ButtonType == ButtonType.PreviousButton)
             {
-                VMMenuPage.CurrentPage = "Poziom 1";
+                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel - 1);
                 VMMenuPage.CurrentImage = "Images/FirstLevelImage.png";
                 VMMenuPage.LevelType = currentSelectedLevel-1;
             }
 
+            //zmiana z Level 2 na Level 3
             else if (currentSelectedLevel == LevelType.SecondLevel && ButtonType == ButtonType.NextButton)
             {
-                VMMenuPage.CurrentPage = "Poziom 3";
+                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel + 1);
                 VMMenuPage.CurrentImage = "Images/error.png";
                 VMMenuPage.LevelType = currentSelectedLevel + 1;
             }
 
+            //zmiana z Level 3 na Level 2
             else if (currentSelectedLevel == LevelType.ThirdLevel && ButtonType==ButtonType.PreviousButton)
             {
-                VMMenuPage.CurrentPage = "Poziom 2";
+                VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel - 1);
                 VMMenuPage.CurrentImage = "Images/error.png";
-                VMMenuPage.LevelType = LevelType.SecondLevel;
+                VMMenuPage.LevelType = currentSelectedLevel-1;
             }
 
             else

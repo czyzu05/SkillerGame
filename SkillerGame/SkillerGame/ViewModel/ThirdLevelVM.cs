@@ -44,6 +44,10 @@ namespace SkillerGame
                 OnPropertyChanged("CurrentSecond");
             }
         }
+
+        public ThirdLevelStateType ThirdLevelStateType { get; set; }
+
+        public List<Button> Buttons { get; set; }
         
 
         /// <summary>
@@ -105,10 +109,8 @@ namespace SkillerGame
         {
             if (CurrentSecond == 0)
             {
-                ThirdLevelPage.SecondsInfo.Text = CurrentSecond.ToString();
-                Timer.Stop();
-                MessageBox.Show("Czas sie skończył");                
-                NavigateHelper.ChangePage(this.ThirdLevelPage, "MenuPage.xaml");
+                ThirdLevelStateType = ThirdLevelStateType.OutOfTime;
+                CheckCurrentStateType();
             }
 
             ThirdLevelPage.SecondsInfo.Text = CurrentSecond--.ToString();
@@ -119,16 +121,16 @@ namespace SkillerGame
 
         public void RandomizePositionsOfNumbers()
         {
-            
-            List<Button> buttons = ThirdLevelData.SetListOfButtons(ThirdLevelPage);
+
+            Buttons = ThirdLevelData.SetListOfButtons(ThirdLevelPage);
             List<string> numbers = ThirdLevelData.SetListOfNumbers();
                 
             var rand = new Random();
             var randomList = numbers.OrderBy(x => rand.Next()).ToList();
             
-            for(int i=0;i<buttons.Count;i++)
-            {                
-                buttons[i].Content = randomList.ElementAt(i);
+            for(int i=0;i< Buttons.Count;i++)
+            {
+                Buttons[i].Content = randomList.ElementAt(i);
             }
 
         }
@@ -138,27 +140,67 @@ namespace SkillerGame
         {
             var buttonContent = button.Content;
             List<string> numbers = ThirdLevelData.SetListOfNumbers();
-            
 
-           
-                if (buttonContent.ToString() == numbers[CurrentState].ToString())
-                {
-                    MessageBox.Show("Dobrze !!!");                   
-                    ChangeStateOfThirdLevel(); //CurrentState++;
-                }
-                else
-                    MessageBox.Show("Źle !!!");
 
-            
+
+            if (buttonContent.ToString() == numbers[CurrentState].ToString())
+            {
+                ThirdLevelStateType = ThirdLevelStateType.GoodNumber;
+                CheckCurrentStateType();
+                button.Content = " ";
+                ChangeStateOfThirdLevel(); //CurrentState++;
+            }
+            else
+            {
+                ThirdLevelStateType = ThirdLevelStateType.WrongNumber;
+                CheckCurrentStateType();
+            }
+
+
 
         }
 
         public int ChangeStateOfThirdLevel()
         {
-            if(CurrentState==19)
-              return CurrentState = 0;
+            if (CurrentState == 19)
+            {
+                ThirdLevelStateType = ThirdLevelStateType.Win;
+                CheckCurrentStateType();
+            }
 
             return CurrentState++;
+
+        }
+
+        /// <summary>
+        /// Metoda odpowiedzialna za sprawdzenie aktulnego Stanu Gry w zależności od aktualnej sytuacji na planszy 
+        /// </summary>
+        public void CheckCurrentStateType()
+        {   
+                         
+          
+            switch(ThirdLevelStateType)
+            {
+                case ThirdLevelStateType.GoodNumber:
+                    //MessageBox.Show("Dobra liczba  !!!");                    
+                    break;
+                case ThirdLevelStateType.WrongNumber:
+                    MessageBox.Show("Zła liczba  !!!");                    
+                    break;
+                case ThirdLevelStateType.OutOfTime:                    
+                    ThirdLevelPage.SecondsInfo.Text = CurrentSecond.ToString(); //ustawione w celu wykrycia przez UI zmiany liczby sekund z 1 na 0 
+                    Timer.Stop();
+                    MessageBox.Show("Czas sie skończył");
+                    NavigateHelper.ChangePage(this.ThirdLevelPage, "MenuPage.xaml");
+                    break;
+                case ThirdLevelStateType.Win:
+                    Timer.Stop();
+                    MessageBox.Show("Wygrałeś !!!");
+                    NavigateHelper.ChangePage(this.ThirdLevelPage, "MenuPage.xaml");
+                    break;
+
+
+            }
 
         }
 
