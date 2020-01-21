@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:SkillerGame"
       mc:Ignorable="d" 
       d:DesignHeight="880" d:DesignWidth="520"
-      Background="WhiteSmoke"
+      Background="WhiteSmoke"     
       Title="ThirdLevel">
 
     <Page.Resources>

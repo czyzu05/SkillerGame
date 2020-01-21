@@ -42,7 +42,7 @@ namespace SkillerGame
 
         private  string currentPage;
         /// <summary>
-        /// Properties przechowuje aktualny Page w postaci string 
+        /// Properties przechowuje aktualnie wybrany Poziom w postaci string 
         /// </summary>
         public string CurrentPage
         {
@@ -57,7 +57,7 @@ namespace SkillerGame
 
         private  LevelType levelType;
         /// <summary>
-        /// Properties przechowuje typ poziomu
+        /// Properties przechowuje aktualny typ poziomu
         /// </summary>
         public LevelType LevelType
         {
@@ -72,7 +72,7 @@ namespace SkillerGame
         /// <summary>
         /// Rodzaj przycisku do nawigacji pomiędzy różnymi poziomami w Menu Głównym
         /// </summary>
-        public ButtonType ButtonType { get; set; }
+        public ButtonType ButtonType { get;}
 
 
 

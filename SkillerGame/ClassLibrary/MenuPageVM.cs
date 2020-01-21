@@ -26,6 +26,21 @@ namespace ClassLibrary
         public MenuPage MenuPage { get; }
 
 
+        private string currentImage;
+        /// <summary>
+        /// Properties przechowuje ścieżkę do obrazka dla aktualnie wybranego poziomu
+        /// </summary>
+        public string CurrentImage
+        {
+            get { return currentImage; }
+            set
+            {
+                currentImage = value;
+                OnPropertyChanged("CurrentImage");
+            }
+        }
+
+
         private string currentPage;
         /// <summary>
         /// Properties przechowuje aktualny Page w postaci string 
@@ -56,6 +71,13 @@ namespace ClassLibrary
         }
 
         /// <summary>
+        /// Rodzaj przycisku do nawigacji pomiędzy różnymi poziomami w Menu Głównym
+        /// </summary>
+        public ButtonType ButtonType { get; set; }
+
+
+
+        /// <summary>
         /// Properties przechowuje Komęde do zmiany Page
         /// </summary>
         public ChangePageCommand ChangePageCommand { get; }
@@ -73,9 +95,13 @@ namespace ClassLibrary
         /// <param name="menuPage">MenuPage pobrany z View</param>
         public MenuPageVM(MenuPage menuPage)
         {
+
             LevelType = LevelType.FirstLevel;
             CurrentPage = "Poziom 1";
+            CurrentImage = "Images/FirstLevelImage.png";
             MenuPage = menuPage;
+
+
 
 
             ChangePageCommand = new ChangePageCommand(this);

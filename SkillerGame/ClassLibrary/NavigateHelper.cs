@@ -13,10 +13,11 @@ namespace ClassLibrary
     /// <summary>
     /// Klasa przechowuje w sobie metody które są przydatne przy nawigowaniu
     /// </summary>
-    public class NavigateHelper
+    public static class NavigateHelper
     {
-
         private static MenuPageVM VMMenuPage;
+
+        private static ButtonType ButtonType;
 
         /// <summary>
         /// Zmiana aktualnego Page na inny Page
@@ -45,22 +46,91 @@ namespace ClassLibrary
         /// Zmiana aktualnie wybranego Poziomu na inny Poziom
         /// </summary>
         /// <param name="currentParent"></param>
-        public static void ChangeCurrentLevel(MenuPageVM vm)
+        public static void ChangeCurrentLevel(MenuPageVM vm, ButtonType buttonType)
         {
+
             VMMenuPage = vm;
+            ButtonType = buttonType;
+            var currentSelectedLevel = VMMenuPage.LevelType;
 
-            if (VMMenuPage.LevelType == LevelType.FirstLevel)
+            switch (currentSelectedLevel)
             {
-                VMMenuPage.CurrentPage = "Poziom 2";
-                VMMenuPage.LevelType = LevelType.SecondLevel;
+                case LevelType.FirstLevel:
+                    if (ButtonType == ButtonType.NextButton)
+                    {
+                        VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel + 1);
+                        VMMenuPage.CurrentImage = "Images/error.png";
+                        VMMenuPage.LevelType = currentSelectedLevel + 1;
+                    }
+                    break;
+                case LevelType.SecondLevel:
+                    if (ButtonType == ButtonType.PreviousButton)
+                    {
+                        VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel - 1);
+                        VMMenuPage.CurrentImage = "Images/FirstLevelImage.png";
+                        VMMenuPage.LevelType = currentSelectedLevel - 1;
+                    }
+                    else if (ButtonType == ButtonType.NextButton)
+                    {
+                        VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel + 1);
+                        VMMenuPage.CurrentImage = "Images/error.png";
+                        VMMenuPage.LevelType = currentSelectedLevel + 1;
+                    }
+                    break;
+                case LevelType.ThirdLevel:
+                    if (ButtonType == ButtonType.PreviousButton)
+                    {
+                        VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel - 1);
+                        VMMenuPage.CurrentImage = "Images/error.png";
+                        VMMenuPage.LevelType = currentSelectedLevel - 1;
+                    }
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException($"{nameof(LevelType)} jest spoza dopuszczalnych przypadków");
 
             }
 
-            else if (VMMenuPage.LevelType == LevelType.SecondLevel)
+            /*
+            //zmiana z Level 1 na Level 2
+            if (currentSelectedLevel == LevelType.FirstLevel && ButtonType == ButtonType.NextButton)
             {
-                VMMenuPage.CurrentPage = "Poziom 1";
-                VMMenuPage.LevelType = LevelType.FirstLevel;
+                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel+1);
+                VMMenuPage.CurrentImage = "Images/error.png";
+                VMMenuPage.LevelType = currentSelectedLevel + 1;
+                
+
             }
+
+            //Do Poprawy 
+            //zmienic na switch
+            //zmiana z Level 2 na Level 1
+            else if (currentSelectedLevel == LevelType.SecondLevel && ButtonType == ButtonType.PreviousButton)
+            {
+                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel - 1);
+                VMMenuPage.CurrentImage = "Images/FirstLevelImage.png";
+                VMMenuPage.LevelType = currentSelectedLevel-1;
+            }
+
+            //zmiana z Level 2 na Level 3
+            else if (currentSelectedLevel == LevelType.SecondLevel && ButtonType == ButtonType.NextButton)
+            {
+                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel + 1);
+                VMMenuPage.CurrentImage = "Images/error.png";
+                VMMenuPage.LevelType = currentSelectedLevel + 1;
+            }
+
+            //zmiana z Level 3 na Level 2
+            else if (currentSelectedLevel == LevelType.ThirdLevel && ButtonType==ButtonType.PreviousButton)
+            {
+                VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel - 1);
+                VMMenuPage.CurrentImage = "Images/error.png";
+                VMMenuPage.LevelType = currentSelectedLevel-1;
+            }
+
+            else
+                throw new ArgumentOutOfRangeException($"{nameof(LevelType)} jest spoza dopuszczalnych przypadków");
+                */
+
 
 
         }

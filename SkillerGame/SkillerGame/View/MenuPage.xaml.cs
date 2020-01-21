@@ -50,9 +50,7 @@ namespace SkillerGame
             Binding binding2 = new Binding("ChangeCurrentLevelCommand");
             binding2.Source = vm;
             forwardButton.SetBinding(Button.CommandProperty, binding2);
-            //CommandParameter dla  przycisku Next
-            //Binding buttonTypeBinding = new Binding("ButtonType");
-            //StaticResourceExtension staticResource = new StaticResourceExtension(ButtonType.NextButton);
+            
 
             
             
@@ -62,9 +60,7 @@ namespace SkillerGame
             Binding binding3 = new Binding("ChangeCurrentLevelCommand");
             binding3.Source = vm;
             backWardButton.SetBinding(Button.CommandProperty, binding3);
-            //CommandParameter dla  przycisku Cofinij
-            //Binding buttonTypeBinding2 = new Binding("ButtonType");
-            //backWardButton.SetBinding(Button.CommandParameterProperty, buttonTypeBinding2);
+            
 
 
             //Bindowanie TextBlocka odpowiedzalnego za wyswietlanie informacjii o aktualnym poziomie

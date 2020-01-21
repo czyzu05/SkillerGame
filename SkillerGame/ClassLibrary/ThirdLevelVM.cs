@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SkillerGame;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -9,9 +10,9 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Threading;
 
-namespace SkillerGame
+namespace ClassLibrary
 {
-   public class ThirdLevelVM : INotifyPropertyChanged
+    public class ThirdLevelVM : INotifyPropertyChanged
     {
 
         /// <summary>
@@ -27,7 +28,7 @@ namespace SkillerGame
         /// <summary>
         /// Aktualny stan gry
         /// </summary>
-        private int CurrentState { get; set;}
+        private int CurrentState { get; set; }
 
         private int currentSecond;
         /// <summary>
@@ -80,7 +81,7 @@ namespace SkillerGame
         /// <param name="thirdLevelPage">ThirdLevelpage pobrany z View</param>
         public ThirdLevelVM(ThirdLevel thirdLevelPage)
         {
-            
+
 
             ThirdLevelPage = thirdLevelPage;
             RandomizePositionsOfNumbers();
@@ -94,8 +95,6 @@ namespace SkillerGame
             CheckNumberCommand = new CheckNumberCommand(this);
 
         }
-
-       
 
         /// <summary>
         /// Metoda która wywołuje zegar gry oraz metodę ChangeAmountOfSeconds co 1 sekundę
@@ -120,10 +119,8 @@ namespace SkillerGame
                 ThirdLevelStateType = ThirdLevelStateType.OutOfTime;
                 CheckCurrentStateType();
             }
-            else if (CurrentSecond < 0)
-                throw new ArgumentOutOfRangeException("Sekundy nie mogą mieć wartości ujemnych");
-            else
-                ThirdLevelPage.SecondsInfo.Text = CurrentSecond--.ToString();
+
+            ThirdLevelPage.SecondsInfo.Text = CurrentSecond--.ToString();
 
         }
 
@@ -135,17 +132,17 @@ namespace SkillerGame
 
             Buttons = ThirdLevelData.SetListOfButtons(ThirdLevelPage);
             Numbers = ThirdLevelData.SetListOfNumbers();
-                
+
             var rand = new Random();
             var randomList = Numbers.OrderBy(x => rand.Next()).ToList();
-            
-            for(int i=0;i< Buttons.Count;i++)
+
+            for (int i = 0; i < Buttons.Count; i++)
             {
                 Buttons[i].Content = randomList.ElementAt(i);
             }
-           
+
         }
-        
+
         /// <summary>
         /// Metoda odpowiedzialna za sprawdzenie czy podana liczba na jaką wskazaliśmy jest tą poprawną
         /// </summary>
@@ -154,7 +151,7 @@ namespace SkillerGame
         {
             var buttonContent = button.Content;
             Numbers = ThirdLevelData.SetListOfNumbers();
-           
+
 
             if (buttonContent.ToString() == Numbers[CurrentState].ToString())
             {
@@ -162,7 +159,7 @@ namespace SkillerGame
                 CheckCurrentStateType();
                 button.Content = " ";
                 button.IsEnabled = false;
-                ChangeStateOfThirdLevel(); 
+                ChangeStateOfThirdLevel();
             }
             else
             {
@@ -187,9 +184,7 @@ namespace SkillerGame
                 ThirdLevelStateType = ThirdLevelStateType.Win;
                 CheckCurrentStateType();
             }
-            else if (CurrentState > 19 || CurrentState<0)
-                throw new ArgumentOutOfRangeException($"Błąd:{nameof(CurrentState)} musi być z zakresu <0;19>");
-            
+
             return CurrentState++;
 
         }
@@ -198,10 +193,10 @@ namespace SkillerGame
         /// Metoda odpowiedzialna za sprawdzenie rodzaju aktulnego stanu gry i w zależności od tego podjęcie odowiednich akcji
         /// </summary>
         private void CheckCurrentStateType()
-        {   
-                         
-          
-            switch(ThirdLevelStateType)
+        {
+
+
+            switch (ThirdLevelStateType)
             {
                 case ThirdLevelStateType.GoodNumber:
                     //MessageBox.Show("Dobra liczba  !!!");                    
@@ -211,7 +206,7 @@ namespace SkillerGame
                     MessageBox.Show("Zła liczba , Przegrałeś !!!");
                     NavigateHelper.ChangePage(this.ThirdLevelPage, "MenuPage.xaml");
                     break;
-                case ThirdLevelStateType.OutOfTime:                    
+                case ThirdLevelStateType.OutOfTime:
                     ThirdLevelPage.SecondsInfo.Text = CurrentSecond.ToString(); //ustawione w celu wykrycia przez UI zmiany liczby sekund z 1 na 0 
                     Timer.Stop();
                     MessageBox.Show("Czas sie skończył");
@@ -222,9 +217,6 @@ namespace SkillerGame
                     MessageBox.Show("Wygrałeś !!!");
                     NavigateHelper.ChangePage(this.ThirdLevelPage, "MenuPage.xaml");
                     break;
-                default:
-                    throw new ArgumentOutOfRangeException("Błąd:Niezdefiniowany przypadek");
-                    
 
 
             }

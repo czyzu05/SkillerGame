@@ -25,7 +25,6 @@ namespace ClassLibrary
 
 
         private MenuPageVM VMMenuPage { get; }
-        
 
         /// <summary>
         /// Konstruktor który inicjuje pobrany z ViewModel MenuPageVM 
@@ -45,6 +44,11 @@ namespace ClassLibrary
         /// <returns></returns>
         public bool CanExecute(object parameter)
         {
+            var buttonType = (ButtonType)Enum.Parse(typeof(ButtonType), parameter.ToString());
+
+            if ((VMMenuPage.LevelType == LevelType.ThirdLevel && buttonType == ButtonType.NextButton) || (VMMenuPage.LevelType == LevelType.FirstLevel && buttonType == ButtonType.PreviousButton))
+                return false;
+
             return true;
         }
 
@@ -55,7 +59,9 @@ namespace ClassLibrary
         public void Execute(object parameter)
         {
 
-            NavigateHelper.ChangeCurrentLevel(VMMenuPage);
+            var buttonType = (ButtonType)Enum.Parse(typeof(ButtonType), parameter.ToString());
+
+            NavigateHelper.ChangeCurrentLevel(VMMenuPage, buttonType);
 
 
         }

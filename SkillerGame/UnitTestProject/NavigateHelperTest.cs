@@ -24,7 +24,7 @@ namespace UnitTestProject
             
 
             //Act
-            NavigateHelper.ChangeCurrentLevel(VMMenuPage);
+            NavigateHelper.ChangeCurrentLevel(VMMenuPage,ButtonType.NextButton);
 
 
             //Assert
@@ -50,7 +50,7 @@ namespace UnitTestProject
 
 
             //Act
-            NavigateHelper.ChangeCurrentLevel(VMMenuPage);
+            NavigateHelper.ChangeCurrentLevel(VMMenuPage,ButtonType.PreviousButton);
 
 
             //Assert
@@ -75,7 +75,7 @@ namespace UnitTestProject
             
 
             //Act
-            NavigateHelper.ChangeCurrentLevel(VMMenuPage);
+            NavigateHelper.ChangeCurrentLevel(VMMenuPage,ButtonType.NextButton);
 
 
         }
@@ -97,7 +97,7 @@ namespace UnitTestProject
 
 
             //Act
-            NavigateHelper.ChangeCurrentLevel(VMMenuPage);
+            NavigateHelper.ChangeCurrentLevel(VMMenuPage,ButtonType.PreviousButton);
 
 
             //Assert

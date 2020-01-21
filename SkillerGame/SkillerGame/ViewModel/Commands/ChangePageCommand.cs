@@ -28,7 +28,7 @@ namespace SkillerGame
 
         private ThirdLevelVM VMThirdLevel { get; set; }
 
-        // public Action<object> VM;
+        
 
         /// <summary>
         /// Konstruktor który inicjuje ViewModel 
@@ -36,17 +36,25 @@ namespace SkillerGame
         /// <param name="vm"></param>
         public ChangePageCommand(object vm)
         {
-            //MenuPageVM
-            VMMenuPage = vm as MenuPageVM;
+            if (vm is MenuPageVM || vm is StartPageVM || vm is FirstLevelVM || vm is ThirdLevelVM)
+            {
+                //MenuPageVM
+                VMMenuPage = vm as MenuPageVM;
 
-            //StartPageVM
-            VMStartPage = vm as StartPageVM;
+                //StartPageVM
+                VMStartPage = vm as StartPageVM;
 
-            //FirstLevelVM
-            VMFirstLevel = vm as FirstLevelVM;
+                //FirstLevelVM
+                VMFirstLevel = vm as FirstLevelVM;
 
-            //ThirdLevelVM
-            VMThirdLevel = vm as ThirdLevelVM;
+                //ThirdLevelVM
+                VMThirdLevel = vm as ThirdLevelVM;
+
+
+            }
+            else
+                throw new ArgumentException("Parametr Komendy musi być zadeklarowanym ViewModel");
+
 
         }
 
@@ -94,6 +102,8 @@ namespace SkillerGame
                 VMThirdLevel.Timer.Stop();
                 NavigateHelper.ChangePage(VMThirdLevel.ThirdLevelPage, "MenuPage.xaml");
             }
+            else
+                throw new ArgumentOutOfRangeException("Nie zdefiniowano zmiany Page dla tego przypadku , niezdefiniowany ViewModel");
 
 
 

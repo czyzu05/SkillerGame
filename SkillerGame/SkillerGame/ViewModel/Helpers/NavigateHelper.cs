@@ -52,9 +52,56 @@ namespace SkillerGame
             ButtonType = buttonType;
             var currentSelectedLevel = VMMenuPage.LevelType;            
            
+            switch(currentSelectedLevel)
+            {
+                case LevelType.FirstLevel:
+                    if(ButtonType==ButtonType.NextButton)
+                    {
+                        VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel + 1);
+                        VMMenuPage.CurrentImage = "Images/error.png";
+                        VMMenuPage.LevelType = currentSelectedLevel + 1;
+                    }
+                    else
+                    {
+                        throw new ArgumentOutOfRangeException($"{nameof(ButtonType)} jest spoza dopuszczalnych przypadków");
+                    }
+                    break;
+                case LevelType.SecondLevel:
+                    if (ButtonType == ButtonType.PreviousButton)
+                    {
+                        VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel - 1);
+                        VMMenuPage.CurrentImage = "Images/FirstLevelImage.png";
+                        VMMenuPage.LevelType = currentSelectedLevel - 1;
+                    }
+                    else if (ButtonType == ButtonType.NextButton)
+                    {
+                        VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel + 1);
+                        VMMenuPage.CurrentImage = "Images/ThirdLevelImage.png";
+                        VMMenuPage.LevelType = currentSelectedLevel + 1;
+                    }
+                    else
+                    {
+                        throw new ArgumentOutOfRangeException($"{nameof(ButtonType)} jest spoza dopuszczalnych przypadków");
+                    }
+                    break;
+                case LevelType.ThirdLevel:
+                    if (ButtonType == ButtonType.PreviousButton)
+                    {
+                        VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel - 1);
+                        VMMenuPage.CurrentImage = "Images/error.png";
+                        VMMenuPage.LevelType = currentSelectedLevel - 1;
+                    }
+                    else
+                    {
+                        throw new ArgumentOutOfRangeException($"{nameof(ButtonType)} jest spoza dopuszczalnych przypadków");
+                    }
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException($"{nameof(LevelType)} jest spoza dopuszczalnych przypadków");
+                    
+            }
 
-
-
+            /*
             //zmiana z Level 1 na Level 2
             if (currentSelectedLevel == LevelType.FirstLevel && ButtonType == ButtonType.NextButton)
             {
@@ -93,7 +140,7 @@ namespace SkillerGame
 
             else
                 throw new ArgumentOutOfRangeException($"{nameof(LevelType)} jest spoza dopuszczalnych przypadków");
-
+                */
             
             
 

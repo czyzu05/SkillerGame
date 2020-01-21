@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace SkillerGame
 {
+    /// <summary>
+    /// Typ Aktualnego stanu gry
+    /// </summary>
     public enum ThirdLevelStateType
     {
-        WrongNumber,  //zmienic na Lose pozniej
+        WrongNumber,  
         GoodNumber,
         OutOfTime,
         Win

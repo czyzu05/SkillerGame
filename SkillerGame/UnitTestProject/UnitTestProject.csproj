@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="NavigateHelperTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThirdLevelVMTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

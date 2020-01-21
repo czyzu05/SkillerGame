@@ -47,11 +47,13 @@
   <ItemGroup>
     <Compile Include="ChangeCurrentLevelCommand.cs" />
     <Compile Include="ChangePageCommand.cs" />
+    <Compile Include="CheckNumberCommand.cs" />
     <Compile Include="FirstLevelVM.cs" />
     <Compile Include="MenuPageVM.cs" />
     <Compile Include="NavigateHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartPageVM.cs" />
+    <Compile Include="ThirdLevelVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SkillerGame\SkillerGame.csproj">

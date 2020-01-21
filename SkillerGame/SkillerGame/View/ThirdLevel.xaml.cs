@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,7 @@ namespace SkillerGame
         {
             InitializeComponent();
             CodeBehindBinding();
+            
         }
 
         /// <summary>
@@ -42,6 +44,7 @@ namespace SkillerGame
             Binding binding2 = new Binding("CurrentSecond");
             binding2.Source = vm;
             SecondsInfo.SetBinding(TextBlock.TextProperty, binding2);
+         
 
             //1 wiersz
 
@@ -163,6 +166,8 @@ namespace SkillerGame
 
 
         }
+        
 
+       
     }
 }
