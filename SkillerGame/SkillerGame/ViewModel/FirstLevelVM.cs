@@ -55,7 +55,7 @@ namespace SkillerGame
         /// Aktualny stan gry
         /// </summary>
 
-        private FirstLevelStateType FirstLevelStateType { get; set; }
+       // private FirstLevelStateType FirstLevelStateType { get; set; }
 
         /// <summary>
         /// Properties przechowuje Komęde do zmiany Page

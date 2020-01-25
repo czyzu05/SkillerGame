@@ -8,3 +8,7 @@ D:\SkillerGame\SkillerGame\ClassLibrary\bin\Debug\SkillerGame.exe.config
 D:\SkillerGame\SkillerGame\ClassLibrary\obj\Debug\ClassLibrary.csproj.CopyComplete
 D:\SkillerGame\SkillerGame\ClassLibrary\obj\Debug\ClassLibrary.dll
 D:\SkillerGame\SkillerGame\ClassLibrary\obj\Debug\ClassLibrary.pdb
+D:\projkekttttt\SkillerGame\SkillerGame\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+D:\projkekttttt\SkillerGame\SkillerGame\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+D:\projkekttttt\SkillerGame\SkillerGame\ClassLibrary\obj\Debug\ClassLibrary.dll
+D:\projkekttttt\SkillerGame\SkillerGame\ClassLibrary\obj\Debug\ClassLibrary.pdb

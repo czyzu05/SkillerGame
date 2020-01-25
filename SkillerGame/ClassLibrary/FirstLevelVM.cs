@@ -24,10 +24,7 @@ namespace ClassLibrary
         /// </summary>
         public FirstLevel FirstLevelPage { get; }
 
-        /// <summary>
-        /// Properties przechowuje typ poziomu
-        /// </summary>
-        public LevelType levelType { get; }
+
 
         /// <summary>
         /// Properties przechowuje Komęde do zmiany Page
@@ -37,12 +34,12 @@ namespace ClassLibrary
 
 
         /// <summary>
-        /// Konstruktor który inicjuje pobrany z View FirstLevel oraz kilka zmiennych
+        /// Konstruktor który inicjuje pobrany z View FirstLevel oraz Komende odpowiedzialną za zmiane aktualnego Page
         /// </summary>
         /// <param name="firstLevelPage">FirstLevelPage pobrany z View</param>
         public FirstLevelVM(FirstLevel firstLevelPage)
         {
-            levelType = LevelType.FirstLevel;
+
 
             FirstLevelPage = firstLevelPage;
 

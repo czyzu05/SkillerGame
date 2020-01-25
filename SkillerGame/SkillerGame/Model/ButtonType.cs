@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SkillerGame
 {
+    /// <summary>
+    /// Typ przycisku odpowiedzialny za nawigację w menu wyboru poziomów
+    /// </summary>
     public enum ButtonType
     {
         PreviousButton,

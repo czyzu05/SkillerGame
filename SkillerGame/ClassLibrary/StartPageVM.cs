@@ -34,7 +34,7 @@ namespace ClassLibrary
 
 
         /// <summary>
-        ///  Konstruktor który inicjuje pobrany z View StartPage oraz kilka zmiennych
+        ///  Konstruktor który inicjuje pobrany z View StartPage oraz Komende odpowiedzialną za zmiane aktualnego Page
         /// </summary>
         /// <param name="startPage">StartPage pobrany z View</param>
         public StartPageVM(StartPage startPage)

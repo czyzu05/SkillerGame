@@ -12,6 +12,9 @@ using System.Windows.Threading;
 
 namespace ClassLibrary
 {
+    /// <summary>
+    /// View Model dla trzeciej gry
+    /// </summary>
     public class ThirdLevelVM : INotifyPropertyChanged
     {
 
@@ -26,9 +29,10 @@ namespace ClassLibrary
         public ThirdLevel ThirdLevelPage { get; }
 
         /// <summary>
-        /// Aktualny stan gry
+        /// Aktualny stan gry w postaci typu int , głównym jego zadaniem jest wskazywanie indeksu który jest aktualnym poprawnym rozwiązaniem
         /// </summary>
-        private int CurrentState { get; set; }
+        public int CurrentState { get; set; }
+
 
         private int currentSecond;
         /// <summary>
@@ -44,9 +48,9 @@ namespace ClassLibrary
             }
         }
         /// <summary>
-        ///  Properties przechowuje aktualny stan gry
+        ///  Properties przechowuje Typ aktualnego stanu gry
         /// </summary>
-        private ThirdLevelStateType ThirdLevelStateType { get; set; }
+        public ThirdLevelStateType ThirdLevelStateType { get; set; }
         /// <summary>
         /// Properties przechowuje Przyciski do gry
         /// </summary>
@@ -96,6 +100,8 @@ namespace ClassLibrary
 
         }
 
+
+
         /// <summary>
         /// Metoda która wywołuje zegar gry oraz metodę ChangeAmountOfSeconds co 1 sekundę
         /// </summary>
@@ -104,7 +110,24 @@ namespace ClassLibrary
             Timer = new DispatcherTimer();
             Timer.Interval = TimeSpan.FromSeconds(1);
             Timer.Tick += ChangeAmountOfSeconds;
+            Timer.Tick += ShowInstruction;
             Timer.Start();
+
+        }
+
+        /// <summary>
+        /// Metoda której zadaniem jest wyświetlanie zasad gry
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ShowInstruction(object sender, EventArgs e)
+        {
+            if (CurrentSecond == 24)
+            {
+                Timer.Stop();
+                MessageBox.Show("Naciśnij liczby w kolejności rosnącej , śpiesz się twój czas jest ograniczony");
+                Timer.Start();
+            }
         }
 
         /// <summary>
@@ -119,8 +142,10 @@ namespace ClassLibrary
                 ThirdLevelStateType = ThirdLevelStateType.OutOfTime;
                 CheckCurrentStateType();
             }
-
-            ThirdLevelPage.SecondsInfo.Text = CurrentSecond--.ToString();
+            else if (CurrentSecond < 0)
+                throw new ArgumentOutOfRangeException("Sekundy nie mogą mieć wartości ujemnych");
+            else
+                ThirdLevelPage.SecondsInfo.Text = CurrentSecond--.ToString();
 
         }
 
@@ -184,6 +209,8 @@ namespace ClassLibrary
                 ThirdLevelStateType = ThirdLevelStateType.Win;
                 CheckCurrentStateType();
             }
+            else if (CurrentState > 19 || CurrentState < 0)
+                throw new ArgumentOutOfRangeException($"Błąd:{nameof(CurrentState)} musi być z zakresu <0;19>");
 
             return CurrentState++;
 
@@ -217,6 +244,9 @@ namespace ClassLibrary
                     MessageBox.Show("Wygrałeś !!!");
                     NavigateHelper.ChangePage(this.ThirdLevelPage, "MenuPage.xaml");
                     break;
+                default:
+                    throw new ArgumentOutOfRangeException("Błąd:Niezdefiniowany przypadek");
+
 
 
             }

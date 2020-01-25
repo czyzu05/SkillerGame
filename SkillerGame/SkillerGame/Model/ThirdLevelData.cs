@@ -7,11 +7,14 @@ using System.Windows.Controls;
 
 namespace SkillerGame
 {
-   public static class ThirdLevelData
+    /// <summary>
+    /// Klasa która przechowuje wszystkie potrzebne dane do prowadzenia gry na trzecim poziomie ,  wykorzystywane przez ViewModel.
+    /// </summary>
+    public static class ThirdLevelData
     {
-     
+
         /// <summary>
-        /// Lista liczb które wyświtlają się w odpowiednim Buttonie
+        /// Lista liczb które wyświetlają się w odpowiednim Buttonie
         /// </summary>
         /// <returns></returns>
         public static List<string> SetListOfNumbers()
@@ -19,32 +22,32 @@ namespace SkillerGame
 
 
             List<string> numbers = new List<string>(20);
-                numbers.Add("1");
-                numbers.Add("2");
-                numbers.Add("3");
-                numbers.Add("4");
-                numbers.Add("5");
-                numbers.Add("6");
-                numbers.Add("7");
-                numbers.Add("8");
-                numbers.Add("9");
-                numbers.Add("10");
-                numbers.Add("11");
-                numbers.Add("12");
-                numbers.Add("13");
-                numbers.Add("14");
-                numbers.Add("15");
-                numbers.Add("16");
-                numbers.Add("17");
-                numbers.Add("18");
-                numbers.Add("19");
-                numbers.Add("20");
+            numbers.Add("1");
+            numbers.Add("2");
+            numbers.Add("3");
+            numbers.Add("4");
+            numbers.Add("5");
+            numbers.Add("6");
+            numbers.Add("7");
+            numbers.Add("8");
+            numbers.Add("9");
+            numbers.Add("10");
+            numbers.Add("11");
+            numbers.Add("12");
+            numbers.Add("13");
+            numbers.Add("14");
+            numbers.Add("15");
+            numbers.Add("16");
+            numbers.Add("17");
+            numbers.Add("18");
+            numbers.Add("19");
+            numbers.Add("20");
 
             return numbers;
         }
 
         /// <summary>
-        /// Lista Buttonów przeznaczonych do gry na trzecim poziomie
+        /// Lista Buttonów przeznaczonych do gry na trzecim poziomie pobrana z View trzeciego poziomu
         /// </summary>
         /// <param name="thirdLevelPage"></param>
         /// <returns></returns>

@@ -15,8 +15,14 @@ namespace ClassLibrary
     /// </summary>
     public static class NavigateHelper
     {
+        /// <summary>
+        /// Pole przechowujące View Model dla MenuPage
+        /// </summary>
         private static MenuPageVM VMMenuPage;
 
+        /// <summary>
+        /// Pole przechowujące typ przycisku aktualnie naciśniętego przez gracza
+        /// </summary>
         private static ButtonType ButtonType;
 
         /// <summary>
@@ -44,8 +50,7 @@ namespace ClassLibrary
 
         /// <summary>
         /// Zmiana aktualnie wybranego Poziomu na inny Poziom
-        /// </summary>
-        /// <param name="currentParent"></param>
+        /// </summary>      
         public static void ChangeCurrentLevel(MenuPageVM vm, ButtonType buttonType)
         {
 
@@ -62,6 +67,10 @@ namespace ClassLibrary
                         VMMenuPage.CurrentImage = "Images/error.png";
                         VMMenuPage.LevelType = currentSelectedLevel + 1;
                     }
+                    else
+                    {
+                        throw new ArgumentOutOfRangeException($"{nameof(ButtonType)} jest spoza dopuszczalnych przypadków");
+                    }
                     break;
                 case LevelType.SecondLevel:
                     if (ButtonType == ButtonType.PreviousButton)
@@ -73,8 +82,12 @@ namespace ClassLibrary
                     else if (ButtonType == ButtonType.NextButton)
                     {
                         VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel + 1);
-                        VMMenuPage.CurrentImage = "Images/error.png";
+                        VMMenuPage.CurrentImage = "Images/ThirdLevelImage.png";
                         VMMenuPage.LevelType = currentSelectedLevel + 1;
+                    }
+                    else
+                    {
+                        throw new ArgumentOutOfRangeException($"{nameof(ButtonType)} jest spoza dopuszczalnych przypadków");
                     }
                     break;
                 case LevelType.ThirdLevel:
@@ -84,54 +97,15 @@ namespace ClassLibrary
                         VMMenuPage.CurrentImage = "Images/error.png";
                         VMMenuPage.LevelType = currentSelectedLevel - 1;
                     }
+                    else
+                    {
+                        throw new ArgumentOutOfRangeException($"{nameof(ButtonType)} jest spoza dopuszczalnych przypadków");
+                    }
                     break;
                 default:
                     throw new ArgumentOutOfRangeException($"{nameof(LevelType)} jest spoza dopuszczalnych przypadków");
 
             }
-
-            /*
-            //zmiana z Level 1 na Level 2
-            if (currentSelectedLevel == LevelType.FirstLevel && ButtonType == ButtonType.NextButton)
-            {
-                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel+1);
-                VMMenuPage.CurrentImage = "Images/error.png";
-                VMMenuPage.LevelType = currentSelectedLevel + 1;
-                
-
-            }
-
-            //Do Poprawy 
-            //zmienic na switch
-            //zmiana z Level 2 na Level 1
-            else if (currentSelectedLevel == LevelType.SecondLevel && ButtonType == ButtonType.PreviousButton)
-            {
-                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel - 1);
-                VMMenuPage.CurrentImage = "Images/FirstLevelImage.png";
-                VMMenuPage.LevelType = currentSelectedLevel-1;
-            }
-
-            //zmiana z Level 2 na Level 3
-            else if (currentSelectedLevel == LevelType.SecondLevel && ButtonType == ButtonType.NextButton)
-            {
-                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel + 1);
-                VMMenuPage.CurrentImage = "Images/error.png";
-                VMMenuPage.LevelType = currentSelectedLevel + 1;
-            }
-
-            //zmiana z Level 3 na Level 2
-            else if (currentSelectedLevel == LevelType.ThirdLevel && ButtonType==ButtonType.PreviousButton)
-            {
-                VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel - 1);
-                VMMenuPage.CurrentImage = "Images/error.png";
-                VMMenuPage.LevelType = currentSelectedLevel-1;
-            }
-
-            else
-                throw new ArgumentOutOfRangeException($"{nameof(LevelType)} jest spoza dopuszczalnych przypadków");
-                */
-
-
 
         }
 

@@ -43,7 +43,7 @@ namespace ClassLibrary
 
         private string currentPage;
         /// <summary>
-        /// Properties przechowuje aktualny Page w postaci string 
+        /// Properties przechowuje aktualnie wybrany Poziom w postaci string 
         /// </summary>
         public string CurrentPage
         {
@@ -58,7 +58,7 @@ namespace ClassLibrary
 
         private LevelType levelType;
         /// <summary>
-        /// Properties przechowuje typ poziomu
+        /// Properties przechowuje aktualny typ poziomu
         /// </summary>
         public LevelType LevelType
         {
@@ -73,7 +73,7 @@ namespace ClassLibrary
         /// <summary>
         /// Rodzaj przycisku do nawigacji pomiędzy różnymi poziomami w Menu Głównym
         /// </summary>
-        public ButtonType ButtonType { get; set; }
+        public ButtonType ButtonType { get; }
 
 
 
@@ -90,7 +90,7 @@ namespace ClassLibrary
 
 
         /// <summary>
-        ///  Konstruktor który inicjuje pobrany z View MenuPage oraz kilka zmiennych
+        ///  Konstruktor który inicjuje pobrany z View MenuPage oraz kilka zmiennych(LevelType , CurrentPage , CurrentImage ,ChangePageCommand , ChangeCurrentLevelCommand)
         /// </summary>
         /// <param name="menuPage">MenuPage pobrany z View</param>
         public MenuPageVM(MenuPage menuPage)
