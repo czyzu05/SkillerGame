@@ -8,159 +8,179 @@
       mc:Ignorable="d" 
       d:DesignHeight="850" d:DesignWidth="500"
       Title="FirstLevel">
+    <Page.Resources>
 
-    <Grid Background="WhiteSmoke" x:Name="siatka" Margin="0,0,0,10">
-        <Grid.Resources>
-            <Style TargetType="{x:Type Button}" x:Key="menuButton">
-                <Setter Property="Height" Value="50"/>
-                <Setter Property="Width" Value="200"/>
+    </Page.Resources>
+    <StackPanel>
+        <StackPanel.Resources>
+            <Style TargetType="{x:Type TextBlock}" x:Key="SecondsInfo">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontWeight" Value="Bold"/>
                 <Setter Property="Background" Value="DarkOrange"/>
                 <Setter Property="Foreground" Value="White"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-                <Setter Property="FontSize"  Value="20"/>
+                <Setter Property="Width" Value="320"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="TextAlignment" Value="Center"/>
 
             </Style>
+        </StackPanel.Resources>
 
-        </Grid.Resources>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Pozostała liczba sekund:" Style="{StaticResource SecondsInfo}"></TextBlock>
+            <TextBlock Width="200" Height="30" Text="10" x:Name="SecondsInfo" Style="{StaticResource SecondsInfo}"></TextBlock>
+        </StackPanel>
 
-        <!--1 wiersz -->
-        <Button Grid.Row="0" Grid.Column="0"  FontSize="25" Content="7" Tag="1" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="0" Grid.Column="1"  FontSize="25" Content="7" Tag="2" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="0" Grid.Column="2"  FontSize="25" Content="7" Tag="3" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="0" Grid.Column="3"  FontSize="25" Content="7" Tag="4" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="0" Grid.Column="4"  FontSize="25" Content="7" Tag="5" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="0" Grid.Column="5"  FontSize="25" Content="7" Tag="6" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="0" Grid.Column="6"  FontSize="25" Content="7" Tag="7" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+        <Grid Background="WhiteSmoke" Height="820" x:Name="siatka" Margin="0,0,0,10">
+            <Grid.Resources>
+                <Style TargetType="{x:Type Button}" x:Key="menuButton">
+                    <Setter Property="Height" Value="50"/>
+                    <Setter Property="Width" Value="200"/>
+                    <Setter Property="Background" Value="DarkOrange"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="FontSize"  Value="20"/>
 
-        <!--2 wiersz -->
-        <Button Grid.Row="1" Grid.Column="0"  FontSize="25" Content="7" Tag="8" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="1" Grid.Column="1"  FontSize="25" Content="7" Tag="9" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="1" Grid.Column="2"  FontSize="25" Content="7" Tag="10" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="1" Grid.Column="3"  FontSize="25" Content="7" Tag="11" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="1" Grid.Column="4"  FontSize="25" Content="7" Tag="12" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="1" Grid.Column="5"  FontSize="25" Content="7" Tag="13" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="1" Grid.Column="6"  FontSize="25" Content="7" Tag="14" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+                </Style>
 
-        <!--3 wiersz -->
-        <Button Grid.Row="2" Grid.Column="0"  FontSize="25" Content="7" Tag="15" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="2" Grid.Column="1"  FontSize="25" Content="7" Tag="16" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="2" Grid.Column="2"  FontSize="25" Content="7" Tag="17" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="2" Grid.Column="3"  FontSize="25" Content="7" Tag="18" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="2" Grid.Column="4"  FontSize="25" Content="7" Tag="19" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="2" Grid.Column="5"  FontSize="25" Content="7" Tag="20" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="2" Grid.Column="6"  FontSize="25" Content="7" Tag="21" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <!--4 wiersz -->
-        <Button Grid.Row="3" Grid.Column="0"  FontSize="25" Content="7" Tag="22" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="3" Grid.Column="1"  FontSize="25" Content="7" Tag="23" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="3" Grid.Column="2"  FontSize="25" Content="7" Tag="24" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="3" Grid.Column="3"  FontSize="25" Content="7" Tag="25" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="3" Grid.Column="4"  FontSize="25" Content="7" Tag="26" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="3" Grid.Column="5"  FontSize="25" Content="7" Tag="27" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="3" Grid.Column="6"  FontSize="25" Content="7" Tag="28" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+            <!--1 wiersz -->
+            <Button Grid.Row="0" Grid.Column="0"  FontSize="25" Content="7" Tag="1" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button1"/>
+            <Button Grid.Row="0" Grid.Column="1"  FontSize="25" Content="7" Tag="2" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button2"/>
+            <Button Grid.Row="0" Grid.Column="2"  FontSize="25" Content="7" Tag="3" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button3"/>
+            <Button Grid.Row="0" Grid.Column="3"  FontSize="25" Content="7" Tag="4" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button4"/>
+            <Button Grid.Row="0" Grid.Column="4"  FontSize="25" Content="7" Tag="5" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button5"/>
+            <Button Grid.Row="0" Grid.Column="5"  FontSize="25" Content="7" Tag="6" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button6"/>
+            <Button Grid.Row="0" Grid.Column="6"  FontSize="25" Content="7" Tag="7" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button7"/>
 
-        <!--5 wiersz -->
-        <Button Grid.Row="4" Grid.Column="0"  FontSize="25" Content="7" Tag="29" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="4" Grid.Column="1"  FontSize="25" Content="7" Tag="30" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="4" Grid.Column="2"  FontSize="25" Content="7" Tag="31" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="4" Grid.Column="3"  FontSize="25" Content="7" Tag="32" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="4" Grid.Column="4"  FontSize="25" Content="7" Tag="33" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="4" Grid.Column="5"  FontSize="25" Content="7" Tag="34" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="4" Grid.Column="6"  FontSize="25" Content="7" Tag="35" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+            <!--2 wiersz -->
+            <Button Grid.Row="1" Grid.Column="0"  FontSize="25" Content="7" Tag="8" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button8"/>
+            <Button Grid.Row="1" Grid.Column="1"  FontSize="25" Content="7" Tag="9" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button9"/>
+            <Button Grid.Row="1" Grid.Column="2"  FontSize="25" Content="7" Tag="10" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button10"/>
+            <Button Grid.Row="1" Grid.Column="3"  FontSize="25" Content="7" Tag="11" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button11"/>
+            <Button Grid.Row="1" Grid.Column="4"  FontSize="25" Content="7" Tag="12" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button12"/>
+            <Button Grid.Row="1" Grid.Column="5"  FontSize="25" Content="7" Tag="13" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button13"/>
+            <Button Grid.Row="1" Grid.Column="6"  FontSize="25" Content="7" Tag="14" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button14"/>
 
-        <!--6 wiersz -->
-        <Button Grid.Row="5" Grid.Column="0"  FontSize="25" Content="7" Tag="36" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="5" Grid.Column="1"  FontSize="25" Content="7" Tag="37" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="5" Grid.Column="2"  FontSize="25" Content="7" Tag="38" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="5" Grid.Column="3"  FontSize="25" Content="7" Tag="39" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="5" Grid.Column="4"  FontSize="25" Content="7" Tag="40" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="5" Grid.Column="5"  FontSize="25" Content="7" Tag="41" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="5" Grid.Column="6"  FontSize="25" Content="7" Tag="42" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+            <!--3 wiersz -->
+            <Button Grid.Row="2" Grid.Column="0"  FontSize="25" Content="7" Tag="15" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button15"/>
+            <Button Grid.Row="2" Grid.Column="1"  FontSize="25" Content="7" Tag="16" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button16"/>
+            <Button Grid.Row="2" Grid.Column="2"  FontSize="25" Content="7" Tag="17" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button17"/>
+            <Button Grid.Row="2" Grid.Column="3"  FontSize="25" Content="7" Tag="18" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button18"/>
+            <Button Grid.Row="2" Grid.Column="4"  FontSize="25" Content="7" Tag="19" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button19"/>
+            <Button Grid.Row="2" Grid.Column="5"  FontSize="25" Content="7" Tag="20" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button20"/>
+            <Button Grid.Row="2" Grid.Column="6"  FontSize="25" Content="7" Tag="21" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button21"/>
 
+            <!--4 wiersz -->
+            <Button Grid.Row="3" Grid.Column="0"  FontSize="25" Content="7" Tag="22" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button22"/>
+            <Button Grid.Row="3" Grid.Column="1"  FontSize="25" Content="7" Tag="23" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button23"/>
+            <Button Grid.Row="3" Grid.Column="2"  FontSize="25" Content="7" Tag="24" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button24"/>
+            <Button Grid.Row="3" Grid.Column="3"  FontSize="25" Content="7" Tag="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button25"/>
+            <Button Grid.Row="3" Grid.Column="4"  FontSize="25" Content="7" Tag="26" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button26"/>
+            <Button Grid.Row="3" Grid.Column="5"  FontSize="25" Content="7" Tag="27" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button27"/>
+            <Button Grid.Row="3" Grid.Column="6"  FontSize="25" Content="7" Tag="28" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button28"/>
 
-        <!--7 wiersz -->
-        <Button Grid.Row="6" Grid.Column="0"  FontSize="25" Content="7" Tag="43" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="6" Grid.Column="1"  FontSize="25" Content="7" Tag="44" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="6" Grid.Column="2"  FontSize="25" Content="7" Tag="45" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="6" Grid.Column="3"  FontSize="25" Content="7" Tag="46" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="6" Grid.Column="4"  FontSize="25" Content="7" Tag="47" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="6" Grid.Column="5"  FontSize="25" Content="7" Tag="48" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="6" Grid.Column="6"  FontSize="25" Content="7" Tag="49" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
+            <!--5 wiersz -->
+            <Button Grid.Row="4" Grid.Column="0"  FontSize="25" Content="7" Tag="29" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button29"/>
+            <Button Grid.Row="4" Grid.Column="1"  FontSize="25" Content="7" Tag="30" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button30"/>
+            <Button Grid.Row="4" Grid.Column="2"  FontSize="25" Content="7" Tag="31" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button31"/>
+            <Button Grid.Row="4" Grid.Column="3"  FontSize="25" Content="7" Tag="32" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button32"/>
+            <Button Grid.Row="4" Grid.Column="4"  FontSize="25" Content="7" Tag="33" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button33"/>
+            <Button Grid.Row="4" Grid.Column="5"  FontSize="25" Content="7" Tag="34" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button34"/>
+            <Button Grid.Row="4" Grid.Column="6"  FontSize="25" Content="7" Tag="35" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button35"/>
 
-        <!--8 wiersz -->
-        <Button Grid.Row="7" Grid.Column="0"  FontSize="25" Content="7" Tag="50" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="7" Grid.Column="1"  FontSize="25" Content="7" Tag="51" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="7" Grid.Column="2"  FontSize="25" Content="7" Tag="52" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="7" Grid.Column="3"  FontSize="25" Content="7" Tag="53" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="7" Grid.Column="4"  FontSize="25" Content="7" Tag="54" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="7" Grid.Column="5"  FontSize="25" Content="7" Tag="55" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="7" Grid.Column="6"  FontSize="25" Content="7" Tag="56" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-
-        <!--9 wiersz -->
-        <Button Grid.Row="8" Grid.Column="0"  FontSize="25" Content="7" Tag="57" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="8" Grid.Column="1"  FontSize="25" Content="7" Tag="58" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="8" Grid.Column="2"  FontSize="25" Content="7" Tag="59" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="8" Grid.Column="3"  FontSize="25" Content="7" Tag="60" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="8" Grid.Column="4"  FontSize="25" Content="7" Tag="61" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="8" Grid.Column="5"  FontSize="25" Content="7" Tag="62" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="8" Grid.Column="6"  FontSize="25" Content="7" Tag="63" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-
-        <!--10 wiersz -->
-        <Button Grid.Row="9" Grid.Column="0"  FontSize="25" Content="7" Tag="64" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="9" Grid.Column="1"  FontSize="25" Content="7" Tag="65" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="9" Grid.Column="2"  FontSize="25" Content="7" Tag="66" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="9" Grid.Column="3"  FontSize="25" Content="7" Tag="67" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="9" Grid.Column="4"  FontSize="25" Content="7" Tag="68" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="9" Grid.Column="5"  FontSize="25" Content="7" Tag="69" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="9" Grid.Column="6"  FontSize="25" Content="7" Tag="70" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-
-        <!--11 wiersz -->
-        <Button Grid.Row="10" Grid.Column="0"  FontSize="25" Content="7" Tag="71" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="10" Grid.Column="1"  FontSize="25" Content="7" Tag="72" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="10" Grid.Column="2"  FontSize="25" Content="7" Tag="73" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="10" Grid.Column="3"  FontSize="25" Content="7" Tag="74" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="10" Grid.Column="4"  FontSize="25" Content="7" Tag="75" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="10" Grid.Column="5"  FontSize="25" Content="7" Tag="76" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="10" Grid.Column="6"  FontSize="25" Content="7" Tag="77" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-
-        <!--12 wiersz -->
-        <Button Grid.Row="11" Grid.Column="0"  FontSize="25" Content="7" Tag="78" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="11" Grid.Column="1"  FontSize="25" Content="7" Tag="79" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="11" Grid.Column="2"  FontSize="25" Content="7" Tag="80" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="11" Grid.Column="3"  FontSize="25" Content="7" Tag="81" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="11" Grid.Column="4"  FontSize="25" Content="7" Tag="82" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <Button Grid.Row="11" Grid.Column="5"  FontSize="25" Content="7" Tag="83" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/>
-        <TextBlock  Text="Timer" Loaded="StartTimer" x:Name="time" Grid.Column="5" Margin="70,5,0,-5" Grid.Row="11" Grid.ColumnSpan="2" />
-        <!--<Button Grid.Row="11" Grid.Column="6"  FontSize="25" Content="7" Tag="84" Background="#FFF5F1F1" Foreground="#FF131313" Loaded="generateNumbersWithOneOther" Click="checkNumber"/> -->
-
-        <Button Grid.Row="12" Grid.Column="2" Grid.ColumnSpan="3" x:Name="menuButton" Content="POWRÓT DO MENU"   Style="{StaticResource menuButton}"  />
+            <!--6 wiersz -->
+            <Button Grid.Row="5" Grid.Column="0"  FontSize="25" Content="7" Tag="36" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button36"/>
+            <Button Grid.Row="5" Grid.Column="1"  FontSize="25" Content="7" Tag="37" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button37"/>
+            <Button Grid.Row="5" Grid.Column="2"  FontSize="25" Content="7" Tag="38" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button38"/>
+            <Button Grid.Row="5" Grid.Column="3"  FontSize="25" Content="7" Tag="39" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button39"/>
+            <Button Grid.Row="5" Grid.Column="4"  FontSize="25" Content="7" Tag="40" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button40"/>
+            <Button Grid.Row="5" Grid.Column="5"  FontSize="25" Content="7" Tag="41" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button41"/>
+            <Button Grid.Row="5" Grid.Column="6"  FontSize="25" Content="7" Tag="42" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button42"/>
 
 
+            <!--7 wiersz -->
+            <Button Grid.Row="6" Grid.Column="0"  FontSize="25" Content="7" Tag="43" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button43"/>
+            <Button Grid.Row="6" Grid.Column="1"  FontSize="25" Content="7" Tag="44" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button44"/>
+            <Button Grid.Row="6" Grid.Column="2"  FontSize="25" Content="7" Tag="45" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button45"/>
+            <Button Grid.Row="6" Grid.Column="3"  FontSize="25" Content="7" Tag="46" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button46"/>
+            <Button Grid.Row="6" Grid.Column="4"  FontSize="25" Content="7" Tag="47" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button47"/>
+            <Button Grid.Row="6" Grid.Column="5"  FontSize="25" Content="7" Tag="48" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button48"/>
+            <Button Grid.Row="6" Grid.Column="6"  FontSize="25" Content="7" Tag="49" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button49"/>
 
-    </Grid>
+            <!--8 wiersz -->
+            <Button Grid.Row="7" Grid.Column="0"  FontSize="25" Content="7" Tag="50" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button50"/>
+            <Button Grid.Row="7" Grid.Column="1"  FontSize="25" Content="7" Tag="51" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button51"/>
+            <Button Grid.Row="7" Grid.Column="2"  FontSize="25" Content="7" Tag="52" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button52"/>
+            <Button Grid.Row="7" Grid.Column="3"  FontSize="25" Content="7" Tag="53" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button53"/>
+            <Button Grid.Row="7" Grid.Column="4"  FontSize="25" Content="7" Tag="54" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button54"/>
+            <Button Grid.Row="7" Grid.Column="5"  FontSize="25" Content="7" Tag="55" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button55"/>
+            <Button Grid.Row="7" Grid.Column="6"  FontSize="25" Content="7" Tag="56" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button56"/>
 
+            <!--9 wiersz -->
+            <Button Grid.Row="8" Grid.Column="0"  FontSize="25" Content="7" Tag="57" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button57"/>
+            <Button Grid.Row="8" Grid.Column="1"  FontSize="25" Content="7" Tag="58" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button58"/>
+            <Button Grid.Row="8" Grid.Column="2"  FontSize="25" Content="7" Tag="59" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button59"/>
+            <Button Grid.Row="8" Grid.Column="3"  FontSize="25" Content="7" Tag="60" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button60"/>
+            <Button Grid.Row="8" Grid.Column="4"  FontSize="25" Content="7" Tag="61" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button61"/>
+            <Button Grid.Row="8" Grid.Column="5"  FontSize="25" Content="7" Tag="62" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button62"/>
+            <Button Grid.Row="8" Grid.Column="6"  FontSize="25" Content="7" Tag="63" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button63"/>
+
+            <!--10 wiersz -->
+            <Button Grid.Row="9" Grid.Column="0"  FontSize="25" Content="7" Tag="64" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button64"/>
+            <Button Grid.Row="9" Grid.Column="1"  FontSize="25" Content="7" Tag="65" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button65"/>
+            <Button Grid.Row="9" Grid.Column="2"  FontSize="25" Content="7" Tag="66" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button66"/>
+            <Button Grid.Row="9" Grid.Column="3"  FontSize="25" Content="7" Tag="67" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button67"/>
+            <Button Grid.Row="9" Grid.Column="4"  FontSize="25" Content="7" Tag="68" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button68"/>
+            <Button Grid.Row="9" Grid.Column="5"  FontSize="25" Content="7" Tag="69" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button69"/>
+            <Button Grid.Row="9" Grid.Column="6"  FontSize="25" Content="7" Tag="70" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button70"/>
+
+            <!--11 wiersz -->
+            <Button Grid.Row="10" Grid.Column="0"  FontSize="25" Content="7" Tag="71" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button71"/>
+            <Button Grid.Row="10" Grid.Column="1"  FontSize="25" Content="7" Tag="72" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button72"/>
+            <Button Grid.Row="10" Grid.Column="2"  FontSize="25" Content="7" Tag="73" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button73"/>
+            <Button Grid.Row="10" Grid.Column="3"  FontSize="25" Content="7" Tag="74" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button74"/>
+            <Button Grid.Row="10" Grid.Column="4"  FontSize="25" Content="7" Tag="75" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button75"/>
+            <Button Grid.Row="10" Grid.Column="5"  FontSize="25" Content="7" Tag="76" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button76"/>
+            <Button Grid.Row="10" Grid.Column="6"  FontSize="25" Content="7" Tag="77" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button77"/>
+
+            <!--12 wiersz -->
+            <Button Grid.Row="11" Grid.Column="0"  FontSize="25" Content="7" Tag="78" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button78"/>
+            <Button Grid.Row="11" Grid.Column="1"  FontSize="25" Content="7" Tag="79" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button79"/>
+            <Button Grid.Row="11" Grid.Column="2"  FontSize="25" Content="7" Tag="80" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button80"/>
+            <Button Grid.Row="11" Grid.Column="3"  FontSize="25" Content="7" Tag="81" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button81"/>
+            <Button Grid.Row="11" Grid.Column="4"  FontSize="25" Content="7" Tag="82" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button82"/>
+            <Button Grid.Row="11" Grid.Column="5"  FontSize="25" Content="7" Tag="83" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button83"/>
+            <Button Grid.Row="11" Grid.Column="6"  FontSize="25" Content="7" Tag="84" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button84"/>
+
+            <Button Grid.Row="12" Grid.ColumnSpan="5" x:Name="menuButton" Content="POWRÓT DO MENU"   Style="{StaticResource menuButton}" Margin="31,10,39,5" Height="Auto" Width="Auto" Grid.Column="1"  />
+
+
+
+        </Grid>
+    </StackPanel>
 </Page>

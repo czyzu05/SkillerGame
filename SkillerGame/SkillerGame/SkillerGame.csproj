@@ -56,6 +56,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\ButtonType.cs" />
+    <Compile Include="Model\FirstLevelData.cs" />
+    <Compile Include="Model\FirstLevelStateType.cs" />
     <Compile Include="Model\LevelType.cs" />
     <Compile Include="Model\ThirdLevelData.cs" />
     <Compile Include="Model\ThirdLevelStateType.cs" />

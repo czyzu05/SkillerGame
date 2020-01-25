@@ -4,6 +4,10 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Threading;
 
 namespace SkillerGame
 {
@@ -25,6 +29,33 @@ namespace SkillerGame
         public FirstLevel FirstLevelPage { get; }
 
         
+        /// <summary>
+        /// Aktualny stan gry
+        /// </summary>
+        
+        private int CurrentState { get; set; }
+
+        private int currentSecond;
+
+        /// <summary>
+        /// Aktualna liczba sekund
+        /// </summary>
+
+        public int CurrentSecond
+        {
+            get { return currentSecond; }
+            set
+            {
+                currentSecond = value;
+                OnPropertyChanged("CurrentSecond");
+            }
+        }
+
+        /// <summary>
+        /// Aktualny stan gry
+        /// </summary>
+
+        private FirstLevelStateType FirstLevelStateType { get; set; }
 
         /// <summary>
         /// Properties przechowuje Komęde do zmiany Page
