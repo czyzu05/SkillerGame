@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace SkillerGame.Model
+namespace SkillerGame
 {
     class FirstLevelData
     {
 
         /// <summary>
-        /// Lista liczb które wyświtlają się w odpowiednim Buttonie
+        /// Liczba wyświetlana w każdym buttonie
         /// </summary>
         /// <returns></returns>
         public static int SetNumber()
@@ -22,7 +22,7 @@ namespace SkillerGame.Model
         }
 
         /// <summary>
-        /// Lista Buttonów przeznaczonych do gry na trzecim poziomie
+        /// Lista Buttonów przeznaczonych do gry na pierwszym poziomie
         /// </summary>
         /// <param name="firstLevelPage"></param>
         /// <returns></returns>
@@ -30,7 +30,7 @@ namespace SkillerGame.Model
         {
             var FirstLevelPage = firstLevelPage;
 
-            List<Button> buttons = new List<Button>(20);
+            List<Button> buttons = new List<Button>(84);
             buttons.Add(FirstLevelPage.button1);
             buttons.Add(FirstLevelPage.button2);
             buttons.Add(FirstLevelPage.button3);
