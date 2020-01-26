@@ -14,7 +14,8 @@ namespace ClassLibrary
     public class ChangeCurrentLevelCommand : ICommand
     {
         /// <summary>
-        /// Event odpowiedzialny sprawdzanie czy można wywołać metodę Execute
+        /// Event odpowiedzialny za sprawdzanie czy można wywołać metodę Execute , a dokładniej nasłuchuje czy w wyniku działania aplikacji nastąpiła zmiana wartości 
+        /// zwracanej przez przez metodę CanExecute
         /// </summary>
         public event EventHandler CanExecuteChanged
         {
@@ -23,13 +24,15 @@ namespace ClassLibrary
 
         }
 
-
+        /// <summary>
+        /// Properties przechowuje MenuPage ViewModel
+        /// </summary>
         private MenuPageVM VMMenuPage { get; }
 
         /// <summary>
         /// Konstruktor który inicjuje pobrany z ViewModel MenuPageVM 
         /// </summary>
-        /// <param name="vm"></param>
+        /// <param name="vm">ViewModel dla MenuPage</param>
         public ChangeCurrentLevelCommand(MenuPageVM vm)
         {
 
@@ -40,7 +43,7 @@ namespace ClassLibrary
         /// <summary>
         /// Metoda odpowiedzialna za sprawdzenie czy w danym czasie metoda Execute może zostać wywołana
         /// </summary>
-        /// <param name="parameter"></param>
+        /// <param name="parameter">Przycisk nawigacji pomiędzy dostępnymi poziomami pobrany z MenuPage</param>
         /// <returns></returns>
         public bool CanExecute(object parameter)
         {
@@ -55,7 +58,7 @@ namespace ClassLibrary
         /// <summary>
         /// Metoda odpowiedzialna wywołuje metodę ChangeCurrentLevel która odpowiada za zmiane wartości Properties CurrentPage i LevelType 
         /// </summary>
-        /// <param name="parameter"></param>
+        /// <param name="parameter">Przycisk nawigacji pomiędzy dostępnymi poziomami pobrany z MenuPage</param>
         public void Execute(object parameter)
         {
 

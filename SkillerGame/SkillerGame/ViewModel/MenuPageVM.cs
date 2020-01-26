@@ -22,7 +22,7 @@ namespace SkillerGame
         /// <summary>
         /// Propierties która ma za zadanie przechowywać Page z pobrany z View 
         /// </summary>
-        public MenuPage MenuPage { get;  }
+        public MenuPage MenuPage { get; }
 
 
         private string currentImage;
@@ -40,7 +40,7 @@ namespace SkillerGame
         }
 
 
-        private  string currentPage;
+        private string currentPage;
         /// <summary>
         /// Properties przechowuje aktualnie wybrany Poziom w postaci string 
         /// </summary>
@@ -55,7 +55,7 @@ namespace SkillerGame
         }
 
 
-        private  LevelType levelType;
+        private LevelType levelType;
         /// <summary>
         /// Properties przechowuje aktualny typ poziomu
         /// </summary>
@@ -72,24 +72,24 @@ namespace SkillerGame
         /// <summary>
         /// Rodzaj przycisku do nawigacji pomiędzy różnymi poziomami w Menu Głównym
         /// </summary>
-        public ButtonType ButtonType { get;}
+        public ButtonType ButtonType { get; }
 
 
 
         /// <summary>
         /// Properties przechowuje Komęde do zmiany Page
         /// </summary>
-        public ChangePageCommand ChangePageCommand { get;  }
+        public ChangePageCommand ChangePageCommand { get; }
 
         /// <summary>
         /// Properties przechowuje Komęde do zmiany aktualnego Poziomu w Menu Głównym
         /// </summary>
-        public ChangeCurrentLevelCommand ChangeCurrentLevelCommand { get;  }
+        public ChangeCurrentLevelCommand ChangeCurrentLevelCommand { get; }
 
 
 
         /// <summary>
-        ///  Konstruktor który inicjuje pobrany z View MenuPage oraz kilka zmiennych
+        ///  Konstruktor który inicjuje pobrany z View MenuPage oraz kilka zmiennych(LevelType , CurrentPage , CurrentImage ,ChangePageCommand , ChangeCurrentLevelCommand)
         /// </summary>
         /// <param name="menuPage">MenuPage pobrany z View</param>
         public MenuPageVM(MenuPage menuPage)
@@ -99,7 +99,7 @@ namespace SkillerGame
             CurrentPage = "Poziom 1";
             CurrentImage = "Images/FirstLevelImage.png";
             MenuPage = menuPage;
-           
+
 
 
 

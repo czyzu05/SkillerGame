@@ -23,13 +23,13 @@ namespace SkillerGame
         /// <summary>
         /// Propierties która ma za zadanie przechowywać Page  pobrany z View 
         /// </summary>
-        public StartPage StartPage { get;}
+        public StartPage StartPage { get; }
 
 
         /// <summary>
         /// Properties przechowuje Komęde do zmiany Page
         /// </summary>
-        public ChangePageCommand ChangePageCommand { get;}
+        public ChangePageCommand ChangePageCommand { get; }
 
 
 

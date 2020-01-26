@@ -14,8 +14,14 @@ namespace SkillerGame
     /// </summary>
     public static class NavigateHelper
     {
+        /// <summary>
+        /// Pole przechowujące View Model dla MenuPage
+        /// </summary>
         private static MenuPageVM VMMenuPage;
 
+        /// <summary>
+        /// Pole przechowujące typ przycisku aktualnie naciśniętego przez gracza
+        /// </summary>
         private static ButtonType ButtonType;
 
         /// <summary>
@@ -23,7 +29,7 @@ namespace SkillerGame
         /// </summary>
         /// <param name="currentParent"></param>
         /// <param name="nextPage"></param>
-        public static void ChangePage(DependencyObject currentParent , string nextPage )
+        public static void ChangePage(DependencyObject currentParent, string nextPage)
         {
 
             Frame pageFrame = null;
@@ -34,7 +40,7 @@ namespace SkillerGame
                 currParent = VisualTreeHelper.GetParent(currParent);
             }
 
-            
+
             if (pageFrame != null)
             {
                 pageFrame.Source = new Uri(nextPage, UriKind.Relative);
@@ -43,19 +49,18 @@ namespace SkillerGame
 
         /// <summary>
         /// Zmiana aktualnie wybranego Poziomu na inny Poziom
-        /// </summary>
-        /// <param name="currentParent"></param>
-        public static void ChangeCurrentLevel(MenuPageVM vm , ButtonType buttonType)
+        /// </summary>      
+        public static void ChangeCurrentLevel(MenuPageVM vm, ButtonType buttonType)
         {
-          
+
             VMMenuPage = vm;
             ButtonType = buttonType;
-            var currentSelectedLevel = VMMenuPage.LevelType;            
-           
-            switch(currentSelectedLevel)
+            var currentSelectedLevel = VMMenuPage.LevelType;
+
+            switch (currentSelectedLevel)
             {
                 case LevelType.FirstLevel:
-                    if(ButtonType==ButtonType.NextButton)
+                    if (ButtonType == ButtonType.NextButton)
                     {
                         VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel + 1);
                         VMMenuPage.CurrentImage = "Images/error.png";
@@ -98,51 +103,8 @@ namespace SkillerGame
                     break;
                 default:
                     throw new ArgumentOutOfRangeException($"{nameof(LevelType)} jest spoza dopuszczalnych przypadków");
-                    
-            }
-
-            /*
-            //zmiana z Level 1 na Level 2
-            if (currentSelectedLevel == LevelType.FirstLevel && ButtonType == ButtonType.NextButton)
-            {
-                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel+1);
-                VMMenuPage.CurrentImage = "Images/error.png";
-                VMMenuPage.LevelType = currentSelectedLevel + 1;
-                
 
             }
-
-            //Do Poprawy 
-            //zmienic na switch
-            //zmiana z Level 2 na Level 1
-            else if (currentSelectedLevel == LevelType.SecondLevel && ButtonType == ButtonType.PreviousButton)
-            {
-                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel - 1);
-                VMMenuPage.CurrentImage = "Images/FirstLevelImage.png";
-                VMMenuPage.LevelType = currentSelectedLevel-1;
-            }
-
-            //zmiana z Level 2 na Level 3
-            else if (currentSelectedLevel == LevelType.SecondLevel && ButtonType == ButtonType.NextButton)
-            {
-                VMMenuPage.CurrentPage = "Poziom "+ (int)(currentSelectedLevel + 1);
-                VMMenuPage.CurrentImage = "Images/error.png";
-                VMMenuPage.LevelType = currentSelectedLevel + 1;
-            }
-
-            //zmiana z Level 3 na Level 2
-            else if (currentSelectedLevel == LevelType.ThirdLevel && ButtonType==ButtonType.PreviousButton)
-            {
-                VMMenuPage.CurrentPage = "Poziom " + (int)(currentSelectedLevel - 1);
-                VMMenuPage.CurrentImage = "Images/error.png";
-                VMMenuPage.LevelType = currentSelectedLevel-1;
-            }
-
-            else
-                throw new ArgumentOutOfRangeException($"{nameof(LevelType)} jest spoza dopuszczalnych przypadków");
-                */
-            
-            
 
         }
 
