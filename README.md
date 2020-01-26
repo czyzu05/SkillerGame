@@ -1,5 +1,5 @@
 # SkillerGame
-SkillerGame jest to zbiór gier logicznych , poszczególną grę wybieramy z Menu Głównego. projekt opracowywany zgodnie z standardem MVVM w zkiżaku z tym warstwa UI została oddzielona od logiki , każdy Page ma swój ViewModel.
+SkillerGame jest to zbiór gier logicznych , poszczególną grę wybieramy z Menu Głównego. projekt opracowywany zgodnie z standardem MVVM w związku z tym warstwa UI została oddzielona od logiki , każdy Page ma swój ViewModel.
 
 # StartPage
 Standardowa strona startowa aplikacji
