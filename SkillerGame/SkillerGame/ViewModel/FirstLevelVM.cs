@@ -152,12 +152,19 @@ namespace SkillerGame
             
             Buttons = FirstLevelData.SetListOfButtons(FirstLevelPage);
             Number = FirstLevelData.SetNumber();
-
             Random rnd = new Random();
             int number = rnd.Next(1, 85);
             for(int i=0; i < Buttons.Count; i++)
             {
-                Buttons[i].Content = 7;
+
+                if (Convert.ToInt32((Buttons[i]).Tag) == number)
+                {
+                    Buttons[i].Content = 1;
+                }
+                else
+                {
+                    Buttons[i].Content = 7;
+                }
             }
 
             /*

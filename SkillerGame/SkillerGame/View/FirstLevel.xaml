@@ -69,113 +69,113 @@
             </Grid.RowDefinitions>
 
             <!--1 wiersz -->
-            <Button Grid.Row="0" Grid.Column="0"  FontSize="25" Content="7" Tag="1" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button1"/>
-            <Button Grid.Row="0" Grid.Column="1"  FontSize="25" Content="7" Tag="2" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button2"/>
-            <Button Grid.Row="0" Grid.Column="2"  FontSize="25" Content="7" Tag="3" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button3"/>
-            <Button Grid.Row="0" Grid.Column="3"  FontSize="25" Content="7" Tag="4" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button4"/>
-            <Button Grid.Row="0" Grid.Column="4"  FontSize="25" Content="7" Tag="5" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button5"/>
-            <Button Grid.Row="0" Grid.Column="5"  FontSize="25" Content="7" Tag="6" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button6"/>
-            <Button Grid.Row="0" Grid.Column="6"  FontSize="25" Content="7" Tag="7" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button7"/>
+            <Button Grid.Row="0" Grid.Column="0"  FontSize="25"  Tag="1" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button1"/>
+            <Button Grid.Row="0" Grid.Column="1"  FontSize="25"  Tag="2" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button2"/>
+            <Button Grid.Row="0" Grid.Column="2"  FontSize="25"  Tag="3" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button3"/>
+            <Button Grid.Row="0" Grid.Column="3"  FontSize="25"  Tag="4" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button4"/>
+            <Button Grid.Row="0" Grid.Column="4"  FontSize="25"  Tag="5" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button5"/>
+            <Button Grid.Row="0" Grid.Column="5"  FontSize="25"  Tag="6" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button6"/>
+            <Button Grid.Row="0" Grid.Column="6"  FontSize="25"  Tag="7" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button7"/>
 
             <!--2 wiersz -->
-            <Button Grid.Row="1" Grid.Column="0"  FontSize="25" Content="7" Tag="8" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button8"/>
-            <Button Grid.Row="1" Grid.Column="1"  FontSize="25" Content="7" Tag="9" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button9"/>
-            <Button Grid.Row="1" Grid.Column="2"  FontSize="25" Content="7" Tag="10" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button10"/>
-            <Button Grid.Row="1" Grid.Column="3"  FontSize="25" Content="7" Tag="11" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button11"/>
-            <Button Grid.Row="1" Grid.Column="4"  FontSize="25" Content="7" Tag="12" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button12"/>
-            <Button Grid.Row="1" Grid.Column="5"  FontSize="25" Content="7" Tag="13" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button13"/>
-            <Button Grid.Row="1" Grid.Column="6"  FontSize="25" Content="7" Tag="14" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button14"/>
+            <Button Grid.Row="1" Grid.Column="0"  FontSize="25"  Tag="8" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button8"/>
+            <Button Grid.Row="1" Grid.Column="1"  FontSize="25"  Tag="9" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button9"/>
+            <Button Grid.Row="1" Grid.Column="2"  FontSize="25"  Tag="10" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button10"/>
+            <Button Grid.Row="1" Grid.Column="3"  FontSize="25"  Tag="11" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button11"/>
+            <Button Grid.Row="1" Grid.Column="4"  FontSize="25"  Tag="12" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button12"/>
+            <Button Grid.Row="1" Grid.Column="5"  FontSize="25"  Tag="13" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button13"/>
+            <Button Grid.Row="1" Grid.Column="6"  FontSize="25"  Tag="14" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button14"/>
 
             <!--3 wiersz -->
-            <Button Grid.Row="2" Grid.Column="0"  FontSize="25" Content="7" Tag="15" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button15"/>
-            <Button Grid.Row="2" Grid.Column="1"  FontSize="25" Content="7" Tag="16" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button16"/>
-            <Button Grid.Row="2" Grid.Column="2"  FontSize="25" Content="7" Tag="17" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button17"/>
-            <Button Grid.Row="2" Grid.Column="3"  FontSize="25" Content="7" Tag="18" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button18"/>
-            <Button Grid.Row="2" Grid.Column="4"  FontSize="25" Content="7" Tag="19" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button19"/>
-            <Button Grid.Row="2" Grid.Column="5"  FontSize="25" Content="7" Tag="20" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button20"/>
-            <Button Grid.Row="2" Grid.Column="6"  FontSize="25" Content="7" Tag="21" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button21"/>
+            <Button Grid.Row="2" Grid.Column="0"  FontSize="25"  Tag="15" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button15"/>
+            <Button Grid.Row="2" Grid.Column="1"  FontSize="25"  Tag="16" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button16"/>
+            <Button Grid.Row="2" Grid.Column="2"  FontSize="25"  Tag="17" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button17"/>
+            <Button Grid.Row="2" Grid.Column="3"  FontSize="25"  Tag="18" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button18"/>
+            <Button Grid.Row="2" Grid.Column="4"  FontSize="25"  Tag="19" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button19"/>
+            <Button Grid.Row="2" Grid.Column="5"  FontSize="25"  Tag="20" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button20"/>
+            <Button Grid.Row="2" Grid.Column="6"  FontSize="25"  Tag="21" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button21"/>
 
             <!--4 wiersz -->
-            <Button Grid.Row="3" Grid.Column="0"  FontSize="25" Content="7" Tag="22" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button22"/>
-            <Button Grid.Row="3" Grid.Column="1"  FontSize="25" Content="7" Tag="23" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button23"/>
-            <Button Grid.Row="3" Grid.Column="2"  FontSize="25" Content="7" Tag="24" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button24"/>
-            <Button Grid.Row="3" Grid.Column="3"  FontSize="25" Content="7" Tag="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button25"/>
-            <Button Grid.Row="3" Grid.Column="4"  FontSize="25" Content="7" Tag="26" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button26"/>
-            <Button Grid.Row="3" Grid.Column="5"  FontSize="25" Content="7" Tag="27" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button27"/>
-            <Button Grid.Row="3" Grid.Column="6"  FontSize="25" Content="7" Tag="28" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button28"/>
+            <Button Grid.Row="3" Grid.Column="0"  FontSize="25"  Tag="22" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button22"/>
+            <Button Grid.Row="3" Grid.Column="1"  FontSize="25"  Tag="23" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button23"/>
+            <Button Grid.Row="3" Grid.Column="2"  FontSize="25"  Tag="24" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button24"/>
+            <Button Grid.Row="3" Grid.Column="3"  FontSize="25"  Tag="25" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button25"/>
+            <Button Grid.Row="3" Grid.Column="4"  FontSize="25"  Tag="26" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button26"/>
+            <Button Grid.Row="3" Grid.Column="5"  FontSize="25"  Tag="27" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button27"/>
+            <Button Grid.Row="3" Grid.Column="6"  FontSize="25"  Tag="28" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button28"/>
 
             <!--5 wiersz -->
-            <Button Grid.Row="4" Grid.Column="0"  FontSize="25" Content="7" Tag="29" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button29"/>
-            <Button Grid.Row="4" Grid.Column="1"  FontSize="25" Content="7" Tag="30" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button30"/>
-            <Button Grid.Row="4" Grid.Column="2"  FontSize="25" Content="7" Tag="31" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button31"/>
-            <Button Grid.Row="4" Grid.Column="3"  FontSize="25" Content="7" Tag="32" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button32"/>
-            <Button Grid.Row="4" Grid.Column="4"  FontSize="25" Content="7" Tag="33" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button33"/>
-            <Button Grid.Row="4" Grid.Column="5"  FontSize="25" Content="7" Tag="34" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button34"/>
-            <Button Grid.Row="4" Grid.Column="6"  FontSize="25" Content="7" Tag="35" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button35"/>
+            <Button Grid.Row="4" Grid.Column="0"  FontSize="25"  Tag="29" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button29"/>
+            <Button Grid.Row="4" Grid.Column="1"  FontSize="25"  Tag="30" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button30"/>
+            <Button Grid.Row="4" Grid.Column="2"  FontSize="25"  Tag="31" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button31"/>
+            <Button Grid.Row="4" Grid.Column="3"  FontSize="25"  Tag="32" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button32"/>
+            <Button Grid.Row="4" Grid.Column="4"  FontSize="25"  Tag="33" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button33"/>
+            <Button Grid.Row="4" Grid.Column="5"  FontSize="25"  Tag="34" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button34"/>
+            <Button Grid.Row="4" Grid.Column="6"  FontSize="25"  Tag="35" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button35"/>
 
             <!--6 wiersz -->
-            <Button Grid.Row="5" Grid.Column="0"  FontSize="25" Content="7" Tag="36" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button36"/>
-            <Button Grid.Row="5" Grid.Column="1"  FontSize="25" Content="7" Tag="37" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button37"/>
-            <Button Grid.Row="5" Grid.Column="2"  FontSize="25" Content="7" Tag="38" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button38"/>
-            <Button Grid.Row="5" Grid.Column="3"  FontSize="25" Content="7" Tag="39" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button39"/>
-            <Button Grid.Row="5" Grid.Column="4"  FontSize="25" Content="7" Tag="40" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button40"/>
-            <Button Grid.Row="5" Grid.Column="5"  FontSize="25" Content="7" Tag="41" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button41"/>
-            <Button Grid.Row="5" Grid.Column="6"  FontSize="25" Content="7" Tag="42" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button42"/>
+            <Button Grid.Row="5" Grid.Column="0"  FontSize="25"  Tag="36" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button36"/>
+            <Button Grid.Row="5" Grid.Column="1"  FontSize="25"  Tag="37" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button37"/>
+            <Button Grid.Row="5" Grid.Column="2"  FontSize="25"  Tag="38" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button38"/>
+            <Button Grid.Row="5" Grid.Column="3"  FontSize="25"  Tag="39" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button39"/>
+            <Button Grid.Row="5" Grid.Column="4"  FontSize="25"  Tag="40" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button40"/>
+            <Button Grid.Row="5" Grid.Column="5"  FontSize="25"  Tag="41" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button41"/>
+            <Button Grid.Row="5" Grid.Column="6"  FontSize="25"  Tag="42" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button42"/>
 
 
             <!--7 wiersz -->
-            <Button Grid.Row="6" Grid.Column="0"  FontSize="25" Content="7" Tag="43" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button43"/>
-            <Button Grid.Row="6" Grid.Column="1"  FontSize="25" Content="7" Tag="44" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button44"/>
-            <Button Grid.Row="6" Grid.Column="2"  FontSize="25" Content="7" Tag="45" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button45"/>
-            <Button Grid.Row="6" Grid.Column="3"  FontSize="25" Content="7" Tag="46" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button46"/>
-            <Button Grid.Row="6" Grid.Column="4"  FontSize="25" Content="7" Tag="47" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button47"/>
-            <Button Grid.Row="6" Grid.Column="5"  FontSize="25" Content="7" Tag="48" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button48"/>
-            <Button Grid.Row="6" Grid.Column="6"  FontSize="25" Content="7" Tag="49" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button49"/>
+            <Button Grid.Row="6" Grid.Column="0"  FontSize="25"  Tag="43" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button43"/>
+            <Button Grid.Row="6" Grid.Column="1"  FontSize="25"  Tag="44" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button44"/>
+            <Button Grid.Row="6" Grid.Column="2"  FontSize="25"  Tag="45" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button45"/>
+            <Button Grid.Row="6" Grid.Column="3"  FontSize="25"  Tag="46" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button46"/>
+            <Button Grid.Row="6" Grid.Column="4"  FontSize="25"  Tag="47" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button47"/>
+            <Button Grid.Row="6" Grid.Column="5"  FontSize="25"  Tag="48" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button48"/>
+            <Button Grid.Row="6" Grid.Column="6"  FontSize="25"  Tag="49" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button49"/>
 
             <!--8 wiersz -->
-            <Button Grid.Row="7" Grid.Column="0"  FontSize="25" Content="7" Tag="50" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button50"/>
-            <Button Grid.Row="7" Grid.Column="1"  FontSize="25" Content="7" Tag="51" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button51"/>
-            <Button Grid.Row="7" Grid.Column="2"  FontSize="25" Content="7" Tag="52" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button52"/>
-            <Button Grid.Row="7" Grid.Column="3"  FontSize="25" Content="7" Tag="53" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button53"/>
-            <Button Grid.Row="7" Grid.Column="4"  FontSize="25" Content="7" Tag="54" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button54"/>
-            <Button Grid.Row="7" Grid.Column="5"  FontSize="25" Content="7" Tag="55" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button55"/>
-            <Button Grid.Row="7" Grid.Column="6"  FontSize="25" Content="7" Tag="56" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button56"/>
+            <Button Grid.Row="7" Grid.Column="0"  FontSize="25"  Tag="50" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button50"/>
+            <Button Grid.Row="7" Grid.Column="1"  FontSize="25"  Tag="51" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button51"/>
+            <Button Grid.Row="7" Grid.Column="2"  FontSize="25"  Tag="52" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button52"/>
+            <Button Grid.Row="7" Grid.Column="3"  FontSize="25"  Tag="53" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button53"/>
+            <Button Grid.Row="7" Grid.Column="4"  FontSize="25"  Tag="54" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button54"/>
+            <Button Grid.Row="7" Grid.Column="5"  FontSize="25"  Tag="55" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button55"/>
+            <Button Grid.Row="7" Grid.Column="6"  FontSize="25"  Tag="56" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button56"/>
 
             <!--9 wiersz -->
-            <Button Grid.Row="8" Grid.Column="0"  FontSize="25" Content="7" Tag="57" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button57"/>
-            <Button Grid.Row="8" Grid.Column="1"  FontSize="25" Content="7" Tag="58" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button58"/>
-            <Button Grid.Row="8" Grid.Column="2"  FontSize="25" Content="7" Tag="59" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button59"/>
-            <Button Grid.Row="8" Grid.Column="3"  FontSize="25" Content="7" Tag="60" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button60"/>
-            <Button Grid.Row="8" Grid.Column="4"  FontSize="25" Content="7" Tag="61" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button61"/>
-            <Button Grid.Row="8" Grid.Column="5"  FontSize="25" Content="7" Tag="62" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button62"/>
-            <Button Grid.Row="8" Grid.Column="6"  FontSize="25" Content="7" Tag="63" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button63"/>
+            <Button Grid.Row="8" Grid.Column="0"  FontSize="25"  Tag="57" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button57"/>
+            <Button Grid.Row="8" Grid.Column="1"  FontSize="25"  Tag="58" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button58"/>
+            <Button Grid.Row="8" Grid.Column="2"  FontSize="25"  Tag="59" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button59"/>
+            <Button Grid.Row="8" Grid.Column="3"  FontSize="25"  Tag="60" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button60"/>
+            <Button Grid.Row="8" Grid.Column="4"  FontSize="25"  Tag="61" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button61"/>
+            <Button Grid.Row="8" Grid.Column="5"  FontSize="25"  Tag="62" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button62"/>
+            <Button Grid.Row="8" Grid.Column="6"  FontSize="25"  Tag="63" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button63"/>
 
             <!--10 wiersz -->
-            <Button Grid.Row="9" Grid.Column="0"  FontSize="25" Content="7" Tag="64" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button64"/>
-            <Button Grid.Row="9" Grid.Column="1"  FontSize="25" Content="7" Tag="65" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button65"/>
-            <Button Grid.Row="9" Grid.Column="2"  FontSize="25" Content="7" Tag="66" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button66"/>
-            <Button Grid.Row="9" Grid.Column="3"  FontSize="25" Content="7" Tag="67" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button67"/>
-            <Button Grid.Row="9" Grid.Column="4"  FontSize="25" Content="7" Tag="68" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button68"/>
-            <Button Grid.Row="9" Grid.Column="5"  FontSize="25" Content="7" Tag="69" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button69"/>
-            <Button Grid.Row="9" Grid.Column="6"  FontSize="25" Content="7" Tag="70" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button70"/>
+            <Button Grid.Row="9" Grid.Column="0"  FontSize="25"  Tag="64" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button64"/>
+            <Button Grid.Row="9" Grid.Column="1"  FontSize="25"  Tag="65" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button65"/>
+            <Button Grid.Row="9" Grid.Column="2"  FontSize="25"  Tag="66" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button66"/>
+            <Button Grid.Row="9" Grid.Column="3"  FontSize="25"  Tag="67" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button67"/>
+            <Button Grid.Row="9" Grid.Column="4"  FontSize="25"  Tag="68" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button68"/>
+            <Button Grid.Row="9" Grid.Column="5"  FontSize="25"  Tag="69" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button69"/>
+            <Button Grid.Row="9" Grid.Column="6"  FontSize="25"  Tag="70" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button70"/>
 
             <!--11 wiersz -->
-            <Button Grid.Row="10" Grid.Column="0"  FontSize="25" Content="7" Tag="71" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button71"/>
-            <Button Grid.Row="10" Grid.Column="1"  FontSize="25" Content="7" Tag="72" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button72"/>
-            <Button Grid.Row="10" Grid.Column="2"  FontSize="25" Content="7" Tag="73" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button73"/>
-            <Button Grid.Row="10" Grid.Column="3"  FontSize="25" Content="7" Tag="74" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button74"/>
-            <Button Grid.Row="10" Grid.Column="4"  FontSize="25" Content="7" Tag="75" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button75"/>
-            <Button Grid.Row="10" Grid.Column="5"  FontSize="25" Content="7" Tag="76" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button76"/>
-            <Button Grid.Row="10" Grid.Column="6"  FontSize="25" Content="7" Tag="77" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button77"/>
+            <Button Grid.Row="10" Grid.Column="0"  FontSize="25"  Tag="71" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button71"/>
+            <Button Grid.Row="10" Grid.Column="1"  FontSize="25"  Tag="72" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button72"/>
+            <Button Grid.Row="10" Grid.Column="2"  FontSize="25"  Tag="73" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button73"/>
+            <Button Grid.Row="10" Grid.Column="3"  FontSize="25"  Tag="74" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button74"/>
+            <Button Grid.Row="10" Grid.Column="4"  FontSize="25"  Tag="75" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button75"/>
+            <Button Grid.Row="10" Grid.Column="5"  FontSize="25"  Tag="76" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button76"/>
+            <Button Grid.Row="10" Grid.Column="6"  FontSize="25"  Tag="77" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button77"/>
 
             <!--12 wiersz -->
-            <Button Grid.Row="11" Grid.Column="0"  FontSize="25" Content="7" Tag="78" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button78"/>
-            <Button Grid.Row="11" Grid.Column="1"  FontSize="25" Content="7" Tag="79" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button79"/>
-            <Button Grid.Row="11" Grid.Column="2"  FontSize="25" Content="7" Tag="80" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button80"/>
-            <Button Grid.Row="11" Grid.Column="3"  FontSize="25" Content="7" Tag="81" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button81"/>
-            <Button Grid.Row="11" Grid.Column="4"  FontSize="25" Content="7" Tag="82" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button82"/>
-            <Button Grid.Row="11" Grid.Column="5"  FontSize="25" Content="7" Tag="83" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button83"/>
-            <Button Grid.Row="11" Grid.Column="6"  FontSize="25" Content="7" Tag="84" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button84"/>
+            <Button Grid.Row="11" Grid.Column="0"  FontSize="25"  Tag="78" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button78"/>
+            <Button Grid.Row="11" Grid.Column="1"  FontSize="25"  Tag="79" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button79"/>
+            <Button Grid.Row="11" Grid.Column="2"  FontSize="25"  Tag="80" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button80"/>
+            <Button Grid.Row="11" Grid.Column="3"  FontSize="25"  Tag="81" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button81"/>
+            <Button Grid.Row="11" Grid.Column="4"  FontSize="25"  Tag="82" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button82"/>
+            <Button Grid.Row="11" Grid.Column="5"  FontSize="25"  Tag="83" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button83"/>
+            <Button Grid.Row="11" Grid.Column="6"  FontSize="25"  Tag="84" CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}" x:Name="button84"/>
 
             <Button Grid.Row="12" Grid.ColumnSpan="5" x:Name="menuButton" Content="POWRÓT DO MENU"   Style="{StaticResource menuButton}" Margin="31,10,39,5" Height="Auto" Width="Auto" Grid.Column="1"  />
 

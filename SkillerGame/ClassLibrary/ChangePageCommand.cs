@@ -39,6 +39,8 @@ namespace ClassLibrary
         /// </summary>
         private FirstLevelVM VMFirstLevel { get; set; }
 
+        private SecondLevelVM VMSecondLevel { get; set; }
+
         /// <summary>
         /// Properties przechowuje ThirdLevelPage ViewModel
         /// </summary>
@@ -66,6 +68,11 @@ namespace ClassLibrary
             {
                 //FirstLevelVM
                 VMFirstLevel = vm as FirstLevelVM;
+            }
+
+            else if ( vm is SecondLevelVM)
+            {
+                VMSecondLevel = vm as SecondLevelVM;
             }
             else if (vm is ThirdLevelVM)
             {

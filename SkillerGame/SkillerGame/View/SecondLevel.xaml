@@ -5,10 +5,33 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SkillerGame"
       mc:Ignorable="d" 
-      d:DesignHeight="850" d:DesignWidth="500"
-      Title="SecondLevel">
+      Background="WhiteSmoke"  
+      d:DesignHeight="880" d:DesignWidth="520">
 
-    <Grid>
-        
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock HorizontalAlignment="Center" Margin="10" Grid.ColumnSpan="4" Foreground="DarkOrange" FontSize="72" FontFamily="Global Monospace">Member Game</TextBlock>
+        <DockPanel LastChildFill="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <TextBlock DockPanel.Dock="Top" Foreground="DarkOrange" FontSize="22">Select Category</TextBlock>
+            <ComboBox Margin="10" DockPanel.Dock="Top" x:Name="categoryBox" FontSize="20">
+                <ComboBox.Items>
+                    <ComboBoxItem>Animals</ComboBoxItem>
+                    <ComboBoxItem>Cars</ComboBoxItem>
+                    <ComboBoxItem>Foods</ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+            <Button DockPanel.Dock="Top" Padding="20" Click="Play_Clicked" Background="DarkOrange" Foreground="White" FontSize="22">Start Game</Button>
+        </DockPanel>
     </Grid>
 </Page>

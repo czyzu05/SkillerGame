@@ -30,6 +30,8 @@ namespace ClassLibrary
         /// </summary>
         private ThirdLevelVM VMThirdLevel { get; set; }
 
+
+
         /// <summary>
         /// Konstruktor który incijuje ThirdLevelViewModel 
         /// </summary>

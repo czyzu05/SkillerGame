@@ -54,6 +54,7 @@
     <Compile Include="MenuPageVM.cs" />
     <Compile Include="NavigateHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecondLevelVM.cs" />
     <Compile Include="StartPageVM.cs" />
     <Compile Include="ThirdLevelData.cs" />
     <Compile Include="ThirdLevelStateType.cs" />

@@ -59,6 +59,7 @@
     <Compile Include="Model\FirstLevelData.cs" />
     <Compile Include="Model\FirstLevelStateType.cs" />
     <Compile Include="Model\LevelType.cs" />
+    <Compile Include="Model\SecondLevelPictureModel.cs" />
     <Compile Include="Model\ThirdLevelData.cs" />
     <Compile Include="Model\ThirdLevelStateType.cs" />
     <Compile Include="ViewModel\Commands\ChangeCurrentLevelCommand.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="ViewModel\FirstLevelVM.cs" />
     <Compile Include="ViewModel\Helpers\NavigateHelper.cs" />
     <Compile Include="ViewModel\MenuPageVM.cs" />
+    <Compile Include="ViewModel\SecondLevelVM.cs" />
     <Compile Include="ViewModel\StartPageVM.cs" />
     <Compile Include="ViewModel\ThirdLevelVM.cs" />
     <Compile Include="View\FirstLevel.xaml.cs">
@@ -74,6 +76,9 @@
     </Compile>
     <Compile Include="View\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SecondGameTemplate.xaml.cs">
+      <DependentUpon>SecondGameTemplate.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\SecondLevel.xaml.cs">
       <DependentUpon>SecondLevel.xaml</DependentUpon>
@@ -101,6 +106,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\MenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SecondGameTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
